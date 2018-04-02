@@ -46,10 +46,6 @@ h2:before, h3:before {
     left: -25px;
     color: yellow;
 }
-.speakersPage h2 {
-    margin-bottom: 20px;
-    position: relative;
-}
 p {
     color: #333;
     font-family: 'Open Sans', sans-serif;
@@ -73,19 +69,20 @@ a:hover, a:focus, a:active {
 }
 
 /* header */
-/*header {
-    background: url(assets/IMG_1748_Joseph_HackerYou_monotone_v1.jpg) center;
-    background-position: cover;
-    background-attachment: fixed;
-    text-align: center;
-    background-size: contain;
-}*/
 .logoContainer {
     background-color: black;
-    /*background: #fff;*/
     border-bottom: 3px solid white;
     padding: 15px;
-    text-align: left;   
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between; 
 }
 .logoContainer img {
     position: relative;
@@ -121,8 +118,8 @@ header a {
     background: white;
     padding: 6px 10px;
     display: inline-block;
-    transform: rotate(-5deg) translateY(50%);
     transition: all 2s;
+    transform: rotate(-5deg);
 }
 .logo {
     transform: rotate(5deg);
@@ -136,7 +133,7 @@ header a {
 }
 .logo-wrapper:hover, .logo-wrapper:active, .logo-wrapper:focus {
     background: yellow;
-    transform: rotate(10deg) translateY(50%);
+    transform: rotate(10deg);
 }
 .logo-wrapper:hover .logo, .logo-wrapper:active .logo, .logo-wrapper:focus .logo {
     transform: rotate(-10deg);
@@ -144,17 +141,21 @@ header a {
 
 /* nav */
 .main-navigation {
-    float: right;
+/*    float: right;
     position: relative;
-    right: 5%;
+    right: 5%;*/
 }
 .menu ul {
     margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 .menu li {
     border: none;
     margin-left: 20px;
-    float: left;
+    /*float: left;*/
     position: relative;
 }
 .menu a {
@@ -181,7 +182,6 @@ header a {
 /* home page hero */
 .home .text-wrapper {
     background-color: white;
-    /*background: url(assets/IMG_1748_Joseph_HackerYou_monotone_v1.jpg) center;*/
     background-position: cover;
     background-attachment: fixed;
     text-align: center;
@@ -217,22 +217,37 @@ section p span {
     font-size: 20px;
     font-weight: 600;
 }
-/*ul {
+
+.eventsNav {
+    margin: 40px auto;
+}
+.eventsNav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
-li {
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 2px solid #ccc;
-    color: #333;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 58px;
-}*/
-.meetup-img {
-    width: 100%;
+.eventsNav a {
+    background: #B30A2E;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    width: 140px;
+    color: white;
 }
+.eventsNav a.eventsNav--camp {
+    background: #076800;
+}
+.eventsNav a.eventsNav--conf {
+    background: #025B9F;
+}
+
 
 
 /* footer */
@@ -261,10 +276,6 @@ footer p {
         font-size: 2.55vw;
         line-height: 4vw;
     }
-/*
-    header {
-        min-height: 35vw;
-    }*/
 
     header p {
         font-size: 4.5vw;
