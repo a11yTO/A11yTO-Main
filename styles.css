@@ -140,11 +140,6 @@ header a {
 }
 
 /* nav */
-.main-navigation {
-/*    float: right;
-    position: relative;
-    right: 5%;*/
-}
 .menu ul {
     margin: 0 auto;
     padding: 0;
@@ -230,6 +225,10 @@ section p span {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    flex-wrap: wrap;
+}
+.eventsNav li {
+    margin: 10px;
 }
 .eventsNav a {
     background: #B30A2E;
@@ -248,7 +247,39 @@ section p span {
     background: #025B9F;
 }
 
+.l2 h1 {
+    color: black;
+    margin: 0;
+    position: relative;
+}
+.l2 h1:before {
+    content: '/';
+    position: absolute;
+    left: -75px;
+    color: yellow;
+}
 
+/*organizers page*/
+.organizersList {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.organizersPage .organizer {
+    text-align: center;
+    margin: 20px;
+}
+.organizersPage .organizer p {
+    margin: 0;
+}
+.organizersPage .organizer img {
+    max-width: 170px;
+    border-radius: 50%;
+}
 
 /* footer */
 footer {
@@ -314,6 +345,10 @@ footer p {
     }
     .logoContainer {
         text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .logoContainer img {
         left: 0;
@@ -322,11 +357,14 @@ footer p {
         float: none;
     }
     .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;  
+        -ms-flex-pack: distribute;
+            justify-content: space-around;  
     }
     .menu li {
-        float: none;
+        margin: 6.5vw 3.5vw 3.5vw;
     }
     .menu a {
 
