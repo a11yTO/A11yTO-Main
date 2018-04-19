@@ -19,6 +19,12 @@ html, body {
     margin: 0;
 }
 
+.home {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 /* fonts */
 h1 {
     color: white;
@@ -207,6 +213,7 @@ section .textWrapper {
 
 .event, main {
     background: #EDF5F8;
+    flex: 1;
 }
 section p span {
     font-size: 20px;
