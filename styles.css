@@ -60,7 +60,7 @@ h3:before {
   content: "/";
   position: absolute;
   left: -25px;
-  color: yellow;
+  color: gray;
 }
 p {
   color: #333;
@@ -81,9 +81,9 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: black;
-  border-bottom: 2px solid yellow;
-  background: yellow;
+  color: white;
+  border-bottom: 0;
+  background: black;
 }
 
 /* header */
