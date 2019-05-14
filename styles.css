@@ -278,6 +278,9 @@ section p span {
 .eventsNav a.eventsNav--conf {
   background: #025b9f;
 }
+.eventsNav a.eventsNav--irl {
+  background: #6C2E7D;
+}
 
 .l2 h1 {
   color: black;
