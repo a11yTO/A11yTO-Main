@@ -1,0 +1,9 @@
+
+
+<footer>
+  <p>{{ site.time | date: '%Y' }} #{{ site.title }} &ndash;
+    <a {% if page.id == 'organizers' %}class="current-page"{% endif %} href="organizers ">Organizers</a> &ndash; 
+    <a {% if page.id == 'conduct' %}class="current-page"{% endif %} href="code-of-conduct ">Code of Conduct</a>
+  </p>
+</footer>
+
