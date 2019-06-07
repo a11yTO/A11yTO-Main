@@ -153,6 +153,11 @@ a {
     border-bottom: 0;
   }
 }
+.social-icons {
+  a {
+    padding: 0.75em 0.25em 0;
+  }
+}
  /* End link styles */
 
 /* -------------------------------------------------------------------------
@@ -180,11 +185,10 @@ a {
   }
 }
 .social-icons {
-  margin: 0;
+  margin: 0.25em 0 0;
   padding: 0;
   li {
     display: inline;
-    margin: 0 0.25rem;
   }
   .twitter-icon,
   .facebook-icon {
@@ -234,6 +238,7 @@ a {
       }
     }
     .social-icons {
+      margin: 0;
       li {
         margin: 0 9px;
         margin: 0 0.5rem;
