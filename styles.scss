@@ -51,6 +51,9 @@ html,
 body {
   margin: 0;
 }
+.hidden {
+  display: none;
+}
  /* End global reset */
 
 /* -------------------------------------------------------------------------
@@ -81,24 +84,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: $main-font-color;
   font-family: $heading-font-stack;
-  font-size: 36px;
-  font-size: 2em;
+  font-size: $base-font-size*2;
   font-weight: 900;
   line-height: 1;
   margin: 0;
   position: relative;
 }
 .sponsorships h3 {
-  font-size: 23px;
-  font-size: 1.25em;
+  font-size: $base-font-size*1.25;
   font-weight: 400;
   margin: 27px 0 18px;
   margin: 1.5em 0 1em;
 }
 @media screen and (min-width: 25em) {
   h1, h2, h3, h4, h5, h6 {
-    font-size: 45px;
-    font-size: 2.5em;
+    font-size: $base-font-size*2.5;
   }
   h1 {
     letter-spacing: -2px;
@@ -107,8 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -1px;
   }
   .page-title {
-    font-size: 63px;
-    font-size: 3.5em;
+    font-size: $base-font-size*3.5;
   }
 }
 @media screen and (min-width: 55.55em) {
@@ -146,10 +145,12 @@ a {
     border: 0;
     color: $secondary-color;
   }
-  &:focus {
-    border: 0;
-    outline: 2px solid $brand-color;
-  }
+}
+*:focus,
+a:focus {
+  border: 0;
+  outline: 0;
+  outline: 2px solid $brand-color;
 }
 .current-page {
   border: 0;
@@ -334,6 +335,36 @@ footer {
   padding: 0.25em 5%;
 } 
 /* End page structure & styles */
+
+/* -------------------------------------------------------------------------
+ * Forms
+ * ------------------------------------------------------------------------- */
+label {
+  font-weight: bold;
+}
+input,
+textarea {
+  border: 0;
+  display: block;
+  font-size: $base-font-size;
+  margin-bottom: 0.5em;
+  outline: 1px solid #333;
+  padding: 0.25em;
+  width: 100%;
+}
+textarea {
+  height: 10em;
+}
+button {
+  background: $brand-color;
+  border: 0;
+  border-radius: 27px;
+  border-radius: 1.5em;
+  color: $inverted-font-color;
+  font-size: $base-font-size;
+  font-weight: bold;
+  padding: 0.5em 2em;
+}
 
 /* -------------------------------------------------------------------------
  * #a11yTO.com Events structure & styles
