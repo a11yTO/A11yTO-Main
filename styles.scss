@@ -339,6 +339,16 @@ footer {
 /* -------------------------------------------------------------------------
  * Forms
  * ------------------------------------------------------------------------- */
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 30em) {
+  form {
+    width: auto;
+    max-width: 31.11em;
+  }
+}
 label {
   font-weight: bold;
 }

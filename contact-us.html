@@ -5,14 +5,12 @@ id: contact-us
 description: .
 ---
 
-      <p>Want to talk? Let's talk...</p>
+      <p>Want to talk? Let's talk. But in addition to using our form to contact us, feel free to interact with us on various social networking platforms: <a href="">follow us on Twitter</a>; <a href="">like us on Facebook</a>; <a href="">connect with us on LinkedIn</a>; or <a href="">follow us on Instagram</a>.</n>
 
       <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thanks">
-        <p><label for="message">Message: <textarea id="message" name="message"></textarea></label></p>
+        <p class="hidden" aria-hidden="true"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
         <p><label for="name">Your Name: <input id="name" type="text" name="name" /></label></p>
         <p><label for="email">Your Email: <input id="email" type="email" name="email" /></label></p>
-        <p class="hidden" aria-hidden="true"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
+        <p><label for="message">Your Message: <textarea id="message" name="message"></textarea></label></p>
         <p><button type="submit">Send</button></p>
       </form>
-
-      <p>In addition to using our form to contact us, feel free to interact with us on various social networking platforms: <a href="">follow us on Twitter</a>; <a href="">like us on Facebook</a>; <a href="">connect with us on LinkedIn</a>; or <a href="">follow us on Instagram</a>.</p>
