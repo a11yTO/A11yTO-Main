@@ -13,6 +13,7 @@ $inverted-font-color: #ffffff;
 $background: #ffffff;
 $secondary-color: #025b9f;
 $secondary-background: #edf5f8;
+$error: #f00;
 
 $base-font-size: 112.5%;
 
@@ -370,7 +371,7 @@ textarea {
   height: 10em;
 }
 .required {
-  color: #333;
+  color: $error;
   font-size: 75%;
   font-style: italic;
 }
