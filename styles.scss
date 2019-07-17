@@ -1,480 +1,556 @@
 /* -------------------------------------------------------------------------
  * #a11yTO Global Sass Variables 
  * ------------------------------------------------------------------------- */
-$a11yto-brand-color: #000000;
-$meetups-brand-color: #b30a2e;
-$camp-brand-color: #076800;
-$conf-brand-color: #025b9f;
-$irl-brand-color: #6C2E7D;
-
-$brand-color: $a11yto-brand-color;
-$main-font-color: #222222;
-$inverted-font-color: #ffffff;
-$background: #ffffff;
-$secondary-color: #025b9f;
-$secondary-background: #edf5f8;
-$error: #f00;
-
-$base-font-size: 112.5%;
-
-$main-font-stack: "Open Sans", sans-serif;
-$heading-font-stack: "League Spartan", "Open Sans", sans-serif;
-$link-color: $secondary-color;
-$link-underline: 2px solid $brand-color;
-
-$main-nav-breakpoint: 45em;
-
-/* -------------------------------------------------------------------------
- * Global reset
- * ------------------------------------------------------------------------- */
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-* html .clearfix {
-  zoom: 1;
-} /* IE6 */
-*:first-child + html .clearfix {
-  zoom: 1;
-} /* IE7 */
-
-html,
-body {
-  margin: 0;
-}
-.hidden {
-  display: none;
-}
- /* End global reset */
-
-/* -------------------------------------------------------------------------
- * Utility class to hide content visually while keeping it screen reader-accessible.
- * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
- * ------------------------------------------------------------------------- */
- .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
-}
- /* End sr-only class */
-
-/* -------------------------------------------------------------------------
- * Typography structure & style
- * ------------------------------------------------------------------------- */
+ $a11yto-brand-color: #000000;
+ $meetups-brand-color: #b30a2e;
+ $camp-brand-color: #076800;
+ $conf-brand-color: #025b9f;
+ $irl-brand-color: #6C2E7D;
+ $gaming-brand-color: #d43d27;
+ 
+ $brand-color: $a11yto-brand-color;
+ $main-font-color: #222222;
+ $inverted-font-color: #ffffff;
+ $background: #ffffff;
+ $secondary-color: #025b9f;
+ $secondary-background: #edf5f8;
+ $error: #f00;
+ 
+ $base-font-size: 112.5%;
+ 
+ $main-font-stack: "Open Sans", sans-serif;
+ $heading-font-stack: "League Spartan", "Open Sans", sans-serif;
+ $link-color: $secondary-color;
+ $link-underline: 2px solid $brand-color;
+ 
+ $logo-width: 10em;
+ 
+ $main-nav-mid-breakpoint: 45em;
+ $main-nav-wide-breakpoint: 68em;
+ 
+ /* -------------------------------------------------------------------------
+  * Global reset
+  * ------------------------------------------------------------------------- */
+ html {
+   box-sizing: border-box;
+ }
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+ .clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+ }
+ * html .clearfix {
+   zoom: 1;
+ } /* IE6 */
+ *:first-child + html .clearfix {
+   zoom: 1;
+ } /* IE7 */
+ 
+ html,
  body {
-  background: $background;
-  color: $main-font-color;
-  font-family: $main-font-stack;
-  font-size: $base-font-size;
-  line-height: 1.55;
-}
-h1, h2, h3, h4, h5, h6 {
-  color: $main-font-color;
-  font-family: $heading-font-stack;
-  font-size: $base-font-size*2;
-  font-weight: 900;
-  line-height: 1;
-  margin: 0;
-  position: relative;
-}
-.sponsorships h3 {
-  font-size: $base-font-size*1.25;
-  font-weight: 400;
-  margin: 27px 0 18px;
-  margin: 1.5em 0 1em;
-}
-@media screen and (min-width: 25em) {
-  h1, h2, h3, h4, h5, h6 {
-    font-size: $base-font-size*2.5;
-  }
-  h1 {
-    letter-spacing: -2px;
-  }
-  h2 {
-    letter-spacing: -1px;
-  }
-  .page-title {
-    font-size: $base-font-size*3.5;
-  }
-}
-@media screen and (min-width: 55.55em) {
-  h1:before,
-  h2:before {
-    content: "/";
-    position: absolute;
-    left: -36px;
-    left: -2.25rem;
-    color: $secondary-color;
-  }
-  h2:before {
-    left: -30px;
-    left: -1.75rem;
-  }
-}
-p,
-ul,
-ol {
-  margin: 27px 0;
-  margin: 1.5em 0;
-}
- /* End typography structure & styles */
-
-/* -------------------------------------------------------------------------
- * Link styles
- * ------------------------------------------------------------------------- */
-a {
-  border-bottom: $link-underline;
-  color: $link-color;
-  text-decoration: none;
-  transition: 0.3s all;
-  &:hover,
-  &:active {
-    border: 0;
-    color: $secondary-color;
-  }
-}
-*:focus,
-a:focus {
-  border: 0;
-  outline: 0;
-  outline: 2px solid black;
-}
-.current-page {
-  border: 0;
-  color: $secondary-color !important;
-  font-weight: bold;
-}
-
-.nav-menu {
-  a {
-    color: $main-font-color;
-    border-bottom: 0;
-    padding: 0.33em 0;
-  }
-}
-.social-icons {
-  a {
-    padding: 0.75em 0.25em 0;
-  }
-}
- /* End link styles */
-
-/* -------------------------------------------------------------------------
- * Page structure & styles
- * ------------------------------------------------------------------------- */
-.site-header {
-  background: $background;
-  border-bottom: 3px solid $brand-color;
-  padding: 18px 5% 12px;
-  padding: 1em 5% 0.65em;
-  text-align: center;
-}
-.branding {
-  height: auto;
-  width: 180px;
-  width: 10em;
-}
-.nav-menu {
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-    margin: 9px;
-    margin: 0.5em;
-  }
-}
-.social-icons {
-  margin: 0.25em 0 0;
-  padding: 0;
-  li {
-    display: inline;
-  }
-  .twitter-icon,
-  .facebook-icon {
-    background: $background;
-    fill: $brand-color;
-    height: auto;
-    width: 28px;
-    width: 1.55em;
-  }
-}
-@supports (flex-wrap: wrap) {
-  .site-header {
-    text-align: center;
-  }
-  .main-navigation {
-    float: none;
-  }
-  .nav-menu,
-  .social-icons {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .social-icons {
-    flex-direction: row;
-  }
-  @media screen and (min-width: $main-nav-breakpoint) {
-    .site-header {
-      text-align: left;
-    }
-    .main-navigation {
-      float: right;
-    }
-    .nav-menu {
-      flex-direction: row;
-      justify-content: flex-end;
-      padding: 14px 0;
-      padding: 1em 0;
-      li {
-        margin: 0 18px;
-        margin: 0 1em;
-      }
-    }
-    .social-icons {
-      margin: 0;
-      li {
-        margin: 0 9px;
-        margin: 0 0.5em;
-      }
-    }
-  }
-}
-main,
-footer {
-  background: $secondary-background;
-}
-article,
-.sponsorships {
-  margin: 0 auto;
-  padding: 27px 5%;
-  padding: 1.5em 5%;
-  width: 1000px;
-  width: 1000px;
-}
-@media screen and (min-width: 0) {
-  article,
-  .sponsorships {
-    width: auto;
-    max-width: 55.55em;
-  }
-}
- ul.team {
-  border: 0;
-  list-style: none;
-  padding: 0;
-  li {
-    text-align: center;
-    margin: 23px;
-    margin: 1.25em;
-  }
-  p {
-    margin: 0;
-  }
-  img {
-    max-width: 216px;
-    max-width: 12em;
-    border-radius: 50%;
-  }
-}
-@supports (flex-wrap: wrap) {
+   margin: 0;
+ }
+ .hidden {
+   display: none;
+ }
+  /* End global reset */
+ 
+ /* -------------------------------------------------------------------------
+  * Utility class to hide content visually while keeping it screen reader-accessible.
+  * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+  * ------------------------------------------------------------------------- */
+  .sr-only:not(:focus):not(:active) {
+   clip: rect(0 0 0 0); 
+   clip-path: inset(100%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap; 
+   width: 1px;
+ }
+  /* End sr-only class */
+ 
+ /* -------------------------------------------------------------------------
+  * Typography structure & style
+  * ------------------------------------------------------------------------- */
+ body {
+   background: $background;
+   color: $main-font-color;
+   font-family: $main-font-stack;
+   font-size: $base-font-size;
+   line-height: 1.55;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   color: $brand-color;
+   font-family: $heading-font-stack;
+   font-size: $base-font-size*2;
+   font-weight: 900;
+   line-height: 1.1;
+   margin: 0;
+   position: relative;
+ }
+ .event {
+   text-align: center;
+ }
+ .event-title {
+   color: $inverted-font-color;
+   font-size: 6.44em;
+   font-weight: 600;
+   letter-spacing: -0.04em;
+   white-space: nowrap;
+ }
+ .event-description {
+   margin: 0;
+ }
+ .event-detail,
+ .event-description {
+   font-size: $base-font-size*2;
+ }
+ .event-date {
+   font-weight: bold;
+ }
+ .sponsorships h3 {
+   font-size: $base-font-size*1.25;
+   font-weight: 400;
+   margin: 1.5em 0 1em;
+ }
+ @media screen and (min-width: 25em) {
+   h1, h2, h3, h4, h5, h6 {
+     font-size: $base-font-size*2.25;
+   }
+   .page-title {
+     font-size: $base-font-size*3.5;
+   }
+ }
+ @media screen and (min-width: 0) {
+   .event-title {
+     font-size: 11vw;
+     margin-bottom: 0.25em;
+   }
+   .event-description,
+   .event-detail {
+     font-size: $base-font-size;
+   }
+ }
+ @media screen and (min-width: 40em) {
+   .event-title {
+     font-size: 9.1vw;
+     margin-bottom: 0.15em;
+   }
+   .event-description,
+   .event-detail {
+     font-size: 3vw;
+   }
+ }
+ p,
+ ul,
+ ol {
+   margin: 1.5em 0;
+ }
+  /* End typography structure & styles */
+ 
+ /* -------------------------------------------------------------------------
+  * Link styles
+  * ------------------------------------------------------------------------- */
+ a {
+   border-bottom: $link-underline;
+   color: $link-color;
+   text-decoration: none;
+   &:hover,
+   &:active {
+     border: 0;
+     color: $secondary-color;
+   }
+ }
+ *:focus,
+ a:focus {
+   border: 0;
+   outline: 2px solid black;
+ }
+ .current-page {
+   border: 0;
+   color: $secondary-color !important;
+   font-weight: bold;
+ }
+ 
+ .nav-menu {
+   a {
+     color: $main-font-color;
+     border-bottom: 0;
+     padding: 0.33em 0;
+   }
+   .tickets a {
+     background: $brand-color;
+     border-radius: 1.38em;
+     color: #fff !important;
+     font-weight: bold;
+     padding: 0.44em 0.83em;
+     white-space: nowrap;
+   }
+ }
+ .social-icons {
+   a {
+     padding: 0.75em 0.25em 0;
+   }
+ }
+  /* End link styles */
+ 
+ /* -------------------------------------------------------------------------
+  * Page structure & styles
+  * ------------------------------------------------------------------------- */
+ .site-header {
+   background: $background;
+   border-bottom: 3px solid $brand-color;
+   padding: 1em 5% 0.65em;
+   text-align: center;
+ }
+ .branding {
+   height: auto;
+   width: $logo-width;
+ }
+ @media screen and (min-width: 0) {
+   .branding {
+     width: auto;
+     max-width: $logo-width;
+   }
+ }
+ .nav-menu {
+   margin: 0;
+   padding: 0;
+   li {
+     list-style: none;
+     margin: 0.5em;
+   }
+ }
+ .social-icons {
+   margin: 0.25em 0 0;
+   padding: 0;
+   li {
+     display: inline;
+   }
+   .twitter-icon,
+   .facebook-icon {
+     background: $background;
+     fill: $brand-color;
+     height: auto;
+     width: 1.55em;
+   }
+ }
+ @supports (flex-wrap: wrap) {
+   .site-header {
+     text-align: center;
+   }
+   .nav-menu,
+   .social-icons {
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   .social-icons {
+     flex-direction: row;
+   }
+   @media screen and (min-width: $main-nav-mid-breakpoint) {
+     .nav-menu {
+       flex-direction: row;
+       justify-content: center;
+       padding: 1em 0;
+       li {
+         margin: 0 1em;
+       }
+     }
+     .social-icons {
+       margin: 0;
+       li {
+         margin: 0 0.5em;
+       }
+     }
+   }
+   @media screen and (min-width: $main-nav-wide-breakpoint) {
+     .site-header {
+       text-align: left;
+     }
+     .main-navigation {
+       float: right;
+     }
+     .nav-menu {
+       justify-content: flex-end;
+     }
+   }
+ }
+ .event {
+   background: $brand-color;
+   color: $inverted-font-color;
+   overflow: hidden;
+   padding: 1.5em 5%;
+ }
+ .event-detail {
+   list-style: none;
+   margin: 0 auto;
+   padding: 0.75em 5%;
+ }
+ main,
+ footer {
+   background: $secondary-background;
+ }
+ article,
+ .travel,
+ .sponsorships {
+   margin: 0 auto;
+   padding: 1.5em 5%;
+   width: 1000px;
+ }
+//  .home .sponsorships {
+//    margin-top: -1.5em;
+//  }
+ @media screen and (min-width: 0) {
+   article,
+   .travel,
+   .sponsorships {
+     width: auto;
+     max-width: 55.55em;
+   }
+ }
   ul.team {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-.sponsorships {
-  margin-top: 18px;
-  margin-top: 1em;
-}
-.sponsors {
-  text-align: center;
-}
-.logo {
-  padding: 36px;
-  padding: 2em;
-}
-@supports (flex-wrap: wrap) {
-  .sponsors {
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    .logo {
-      width: 100%;
-    }
-  }
-}
-footer {
-  padding: 0.25em 5%;
-} 
-/* End page structure & styles */
-
-/* -------------------------------------------------------------------------
- * Forms
- * ------------------------------------------------------------------------- */
-form {
-  width: 600px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 0) {
-  form {
-    width: auto;
-    max-width: 31.11em;
-  }
-}
-label {
-  font-weight: bold;
-}
-input,
-textarea {
-  border: 0;
-  display: block;
-  font-family: $main-font-stack;
-  font-size: $base-font-size;
-  margin-bottom: 0.5em;
-  outline: 1px solid #333;
-  padding: 0.25em;
-  width: 100%;
-}
-textarea {
-  height: 10em;
-}
-.required {
-  color: $error;
-  font-size: 75%;
-  font-style: italic;
-}
-button {
-  background: $brand-color;
-  border: 0;
-  border-radius: 27px;
-  border-radius: 1.5em;
-  color: $inverted-font-color;
-  font-size: $base-font-size;
-  font-weight: bold;
-  padding: 0.5em 2em;
-}
-
-/* -------------------------------------------------------------------------
- * #a11yTO.com Events structure & styles
- * ------------------------------------------------------------------------- */
- .events {
-  ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  }
-  li {
-    float: left;
-    list-style: none;
-    margin: 18px 9px;
-    margin: 1em 0.5em;
-  }
-  a {
-    background: $meetups-brand-color;
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 27px;
-    border-radius: 1.5em;
-    border: none;
-    padding: 14px;
-    padding: 0.75em;
-    width: 180px;
-    width: 10em;
-    color: $inverted-font-color;
-  }
-  a.camp {
-    background: $camp-brand-color;
-  }
-  a.conf {
-    background: $conf-brand-color;
-  }
-  a.irl {
-    background: $irl-brand-color;
-  }
-}
-@media screen and (min-width: 0) {
+   border: 0;
+   list-style: none;
+   padding: 0;
+   li {
+     text-align: center;
+     margin: 1.25em;
+   }
+   p {
+     margin: 0;
+   }
+   img {
+     max-width: 12em;
+     border-radius: 50%;
+   }
+ }
+ .speaker-detail {
+   min-height: 11.11em;
+   position: relative;
+   img {
+     border-radius: 50%;
+     display: block;
+     margin: 1.55em auto 0;
+     width: 14em;
+   }
+ }
+ @media screen and (min-width: 40em) {
+   .speaker-detail {
+     padding-left: 11.11em;
+     img {
+       margin: 0;
+       max-width: 9.44em;
+       position: absolute;
+       top: 0.55em;
+       left: 0;
+       width: auto;
+     }
+   }
+ }
+ @supports (flex-wrap: wrap) {
+   ul.team {
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+ }
+ .sponsorships {
+   margin-top: 1em;
+ }
+ .sponsors {
+   text-align: center;
+ }
+ .logo {
+   padding: 2em;
+ }
+ @supports (flex-wrap: wrap) {
+   .sponsors {
+     display: -ms-flexbox;
+     display: flex;
+     width: 100%;
+     -ms-flex-pack: distribute;
+     justify-content: space-around;
+     -ms-flex-align: center;
+     align-items: center;
+     flex-wrap: wrap;
+     .logo {
+       width: 100%;
+     }
+   }
+ }
+ .google-maps {
+   position: relative;
+   padding-bottom: 75%;
+   height: 0;
+   overflow: hidden;
+   margin: 0.75em 0;
+ }
+ .google-maps iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100% !important;
+   height: 100% !important;
+ }
+ .address {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ .venue {
+   font-size: $base-font-size*1.25;
+   font-weight: bold;
+ }
+ footer {
+   padding: 0.25em 5%;
+ } 
+ /* End page structure & styles */
+ 
+ /* -------------------------------------------------------------------------
+  * Forms
+  * ------------------------------------------------------------------------- */
+ form {
+   width: 600px;
+   margin: 0 auto;
+ }
+ @media screen and (min-width: 0) {
+   form {
+     width: auto;
+     max-width: 31.11em;
+   }
+ }
+ label {
+   font-weight: bold;
+ }
+ input,
+ textarea {
+   border: 0;
+   display: block;
+   font-family: $main-font-stack;
+   font-size: $base-font-size;
+   margin-bottom: 0.5em;
+   outline: 1px solid #333;
+   padding: 0.25em;
+   width: 100%;
+ }
+ textarea {
+   height: 10em;
+ }
+ .required {
+   color: $error;
+   font-size: 75%;
+   font-style: italic;
+ }
+ button {
+   background: $brand-color;
+   border: 0;
+   border-radius: 1.5em;
+   color: $inverted-font-color;
+   font-size: $base-font-size;
+   font-weight: bold;
+   padding: 0.5em 2em;
+ }
+ 
+ /* -------------------------------------------------------------------------
+  * #a11yTO.com Events structure & styles
+  * ------------------------------------------------------------------------- */
   .events {
-    a {
-      width: 18em;
-    }
-  }
-  .events ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 55.55em) {
-  .events {
-    a {
-      width: 16em;
-    }
-  }
-}
-@media screen and (min-width: 55.55em) {
-  .events {
-    a {
-      width: 10em;
-    }
-  }
-} 
-/* End #a11yTO.com Events structure & styles */
-
-/* -------------------------------------------------------------------------
- * Staged site structure & styles
- * ------------------------------------------------------------------------- */
-.staged {
-  background: black;
-  color: $inverted-font-color;
-  font-size: 75%;
-  line-height: 1.1;
-  margin: 0;
-  padding: 0.5em;
-  text-align: center;
-  width: 100%;
-}
-.staged a {
-  border-bottom: 1px solid white;
-  color: $inverted-font-color;
-}
-.staged a:focus {
-  border: 0;
-  outline: 2px solid white;
-}
+   ul {
+   list-style: none;
+   padding: 0;
+   margin: 0 auto;
+   }
+   li {
+     float: left;
+     list-style: none;
+     margin: 1em 0.5em;
+   }
+   a {
+     background: $meetups-brand-color;
+     display: block;
+     font-weight: bold;
+     text-align: center;
+     border-radius: 1.5em;
+     border: none;
+     padding: 0.75em;
+     width: 8em;
+     color: $inverted-font-color;
+   }
+   a.camp {
+     background: $camp-brand-color;
+   }
+   a.conf {
+     background: $conf-brand-color;
+   }
+   a.irl {
+     background: $irl-brand-color;
+   }
+   a.gaming {
+     background: $gaming-brand-color;
+   }
+ }
+ @media screen and (min-width: 0) {
+   .events {
+     a {
+       width: 18em;
+     }
+   }
+   .events ul {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-pack: distribute;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin: 0;
+   }
+ }
+ @media screen and (min-width: 60em) {
+   .events {
+     a {
+       width: 8em;
+     }
+   }
+ } 
+ /* End #a11yTO.com Events structure & styles */
+ 
+ /* -------------------------------------------------------------------------
+  * Staged site structure & styles
+  * ------------------------------------------------------------------------- */
+ .staged {
+   background: black;
+   color: $inverted-font-color;
+   font-size: 75%;
+   line-height: 1.1;
+   margin: 0;
+   padding: 0.5em;
+   text-align: center;
+   width: 100%;
+ }
+ .staged a {
+   border-bottom: 1px solid white;
+   color: $inverted-font-color;
+ }
+ .staged a:focus {
+   border: 0;
+   outline: 2px solid white;
+ }
