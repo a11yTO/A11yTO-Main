@@ -29,8 +29,8 @@ $main-nav-mid-breakpoint: 25em;
 $main-nav-wide-breakpoint: 35em;
 
 /* -------------------------------------------------------------------------
-* Global reset
-* ------------------------------------------------------------------------- */
+ * Global reset
+ * ------------------------------------------------------------------------- */
 html {
   box-sizing: border-box;
 }
@@ -61,13 +61,13 @@ body {
 .hidden {
   display: none;
 }
-/* End global reset */
+ /* End global reset */
 
 /* -------------------------------------------------------------------------
-* Utility class to hide content visually while keeping it screen reader-accessible.
-* Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
-* ------------------------------------------------------------------------- */
-.sr-only:not(:focus):not(:active) {
+ * Utility class to hide content visually while keeping it screen reader-accessible.
+ * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ * ------------------------------------------------------------------------- */
+ .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(100%);
   height: 1px;
@@ -76,11 +76,11 @@ body {
   white-space: nowrap; 
   width: 1px;
 }
-/* End sr-only class */
+ /* End sr-only class */
 
 /* -------------------------------------------------------------------------
-* Typography structure & style
-* ------------------------------------------------------------------------- */
+ * Typography structure & style
+ * ------------------------------------------------------------------------- */
 body {
   background: $background;
   color: $main-font-color;
@@ -131,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .page-title {
     font-size: $base-font-size*3.5;
+    letter-spacing: -0.04em;
   }
 }
 @media screen and (min-width: 0) {
@@ -158,11 +159,11 @@ ul,
 ol {
   margin: 1.5em 0;
 }
-/* End typography structure & styles */
+ /* End typography structure & styles */
 
 /* -------------------------------------------------------------------------
-* Link styles
-* ------------------------------------------------------------------------- */
+ * Link styles
+ * ------------------------------------------------------------------------- */
 a {
   border-bottom: $link-underline;
   color: $link-color;
@@ -188,7 +189,7 @@ a:focus {
   a {
     color: $main-font-color;
     border-bottom: 0;
-    padding: 0.33em 0;
+    padding: 0.33em;
   }
   .tickets a {
     background: $brand-color;
@@ -204,11 +205,11 @@ a:focus {
     padding: 0.75em 0.25em 0;
   }
 }
-/* End link styles */
+ /* End link styles */
 
 /* -------------------------------------------------------------------------
-* Page structure & styles
-* ------------------------------------------------------------------------- */
+ * Page structure & styles
+ * ------------------------------------------------------------------------- */
 .site-header {
   background: $background;
   border-bottom: 3px solid $brand-color;
@@ -231,7 +232,7 @@ a:focus {
   padding: 0;
   li {
     list-style: none;
-    margin: 0.5em;
+    margin: 0 0.25em 1em;
   }
 }
 .social-icons {
@@ -239,9 +240,12 @@ a:focus {
   padding: 0;
   li {
     display: inline;
+    margin-bottom: 0;
   }
   .twitter-icon,
-  .facebook-icon {
+  .facebook-icon,
+  .instagram-icon,
+  .linkedin-icon {
     background: $background;
     fill: $brand-color;
     height: auto;
@@ -272,13 +276,13 @@ a:focus {
       justify-content: center;
       padding: 1em 0;
       li {
-        margin: 0 1em;
+        // margin: 0 1em;
       }
     }
     .social-icons {
       margin: 0;
       li {
-        margin: 0 0.5em;
+        margin: 0 0.25em;
       }
     }
   }
@@ -316,9 +320,9 @@ article,
   padding: 1.5em 5%;
   width: 1000px;
 }
-// .home .sponsorships {
-//   margin-top: -1.5em;
-// }
+.home .sponsorships {
+  margin-top: -1.5em;
+}
 @media screen and (min-width: 0) {
   article,
   .travel,
@@ -327,7 +331,7 @@ article,
     max-width: 55.55em;
   }
 }
-ul.team {
+ ul.team {
   border: 0;
   list-style: none;
   padding: 0;
@@ -431,8 +435,8 @@ footer {
 /* End page structure & styles */
 
 /* -------------------------------------------------------------------------
-* Forms
-* ------------------------------------------------------------------------- */
+ * Forms
+ * ------------------------------------------------------------------------- */
 form {
   width: 600px;
   margin: 0 auto;
@@ -473,6 +477,49 @@ button {
   font-size: $base-font-size;
   font-weight: bold;
   padding: 0.5em 2em;
+}
+
+/* -------------------------------------------------------------------------
+* Camp schedule table
+* ------------------------------------------------------------------------- */
+.tg  {
+  border-collapse: collapse;
+  border-spacing: 0;
+	color: #333;
+  font-size: 0.78em;
+  margin-bottom: 3em;
+}
+.tg a {
+  color: $main-font-color
+}
+.tg td{
+  font-size: 0.78em;
+  padding: 0.56em 0.27em;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+}
+.tg th{
+	font-size: 0.78em;
+	font-weight: bold;
+  padding: 0.56em 0.27em;
+	border: 1px solid black;
+	overflow: hidden;
+	word-break: normal; 
+	background: $brand-color; 
+	color: white;
+}
+.tg .tg-baqh{
+  text-align: center;
+  vertical-align: top
+}
+.tg .tg-yw4l{
+  vertical-align: top;
+}
+
+.tg tr:nth-of-type(2n+1) {
+	background: rgba(7, 104, 0, 0.2);
 }
 
 /* -------------------------------------------------------------------------
@@ -541,8 +588,8 @@ button {
 /* End #a11yTO.com Branded Events structure & styles */
 
 /* -------------------------------------------------------------------------
-* Staged site structure & styles
-* ------------------------------------------------------------------------- */
+ * Staged site structure & styles
+ * ------------------------------------------------------------------------- */
 .staged {
   background: black;
   color: $inverted-font-color;
