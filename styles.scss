@@ -23,7 +23,7 @@ $heading-font-stack: "League Spartan", "Open Sans", sans-serif;
 $link-color: $secondary-color;
 $link-underline: 2px solid $brand-color;
 
-$logo-width: 9em;
+$logo-height: 4em;
 
 $main-nav-mid-breakpoint: 25em;
 $main-nav-wide-breakpoint: 35em;
@@ -217,15 +217,9 @@ a:focus {
   text-align: center;
 }
 .branding {
-  height: auto;
+  height: $logo-height;
   padding: 0.33em 0;
-  width: $logo-width;
-}
-@media screen and (min-width: 0) {
-  .branding {
-    width: auto;
-    max-width: $logo-width;
-  }
+  width: auto;
 }
 .nav-menu {
   margin: 0;
@@ -274,7 +268,7 @@ a:focus {
     .nav-menu {
       flex-direction: row;
       justify-content: center;
-      padding: 1em 0;
+      padding: 1em 0 0;
       li {
         // margin: 0 1em;
       }
@@ -320,9 +314,9 @@ article,
   padding: 1.5em 5%;
   width: 1000px;
 }
-.home .sponsorships {
-  margin-top: -1.5em;
-}
+// .home .sponsorships {
+//   margin-top: -1.5em;
+// }
 @media screen and (min-width: 0) {
   article,
   .travel,
