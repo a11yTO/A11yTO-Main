@@ -31,7 +31,7 @@ $main-nav-wide-breakpoint: 35em;
 /* -------------------------------------------------------------------------
  * Global reset
  * ------------------------------------------------------------------------- */
-html {
+ html {
   box-sizing: border-box;
 }
 *,
@@ -228,6 +228,9 @@ a:focus {
     list-style: none;
     margin: 0 0.25em 1em;
   }
+  .tickets {
+    margin: 0.75em 0 1.75em;
+  }
 }
 .social-icons {
   margin: 0.25em 0 0;
@@ -268,9 +271,12 @@ a:focus {
     .nav-menu {
       flex-direction: row;
       justify-content: center;
-      padding: 1em 0 0;
+      padding: 1em 0;
       li {
-        // margin: 0 1em;
+        margin: 0 0.75em;
+      }
+      .tickets {
+        margin: 0 0.5em;
       }
     }
     .social-icons {
