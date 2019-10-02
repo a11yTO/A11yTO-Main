@@ -123,10 +123,10 @@ h1, h2, h3, h4, h5, h6 {
 .page-title {
   margin-bottom: 0.5em;
 }
-.sponsorships h3 {
+.sub-head {
   font-size: $base-font-size*1.25;
-  font-weight: 400;
-  margin: 1.5em 0 1em;
+  font-weight: 600;
+  margin: 1em 0 0;
 }
 @media screen and (min-width: 25em) {
   h1, h2, h3, h4, h5, h6 {
