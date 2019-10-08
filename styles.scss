@@ -544,6 +544,27 @@ button {
 /* -------------------------------------------------------------------------
 * #a11yTO.com Branded Events structure & styles
 * ------------------------------------------------------------------------- */
+.a11yweekto-event {
+  margin-bottom: 3em;
+  h3 {
+    font-size: $base-font-size;
+    margin-bottom: 0.25em;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+  }
+}
+.events-list {
+  margin-bottom: 3em;
+  li {
+    p {
+      margin: 0;
+    }
+  }
+}
 .branded-events {
   ul {
   list-style: none;
