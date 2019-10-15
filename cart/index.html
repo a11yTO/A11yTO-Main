@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CART</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" type="text/css" charset="utf-8" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/NoSleep.min.js"></script>
+    <script type="text/javascript" src="js/main.js?v=1.2"></script>
+    <script>
+        $(document).on("mobileinit", function () {
+            $.mobile.hashListeningEnabled = false;
+            $.mobile.pushStateEnabled = false;
+            $.mobile.changePage.defaults.changeHash = false;
+        });
+    </script>
+
+	</head>
+<body style="margin: 0px; padding: 0px; ">
+
+<div data-role="page" id="login" data-theme="a">
+    <div data-role="content">
+
+        <form id="check-user" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+            <fieldset>
+                <div data-role="fieldcontain">
+                    <label for="username" >Event ID</label>
+                    <input  type="text" value="A11YTO" name="username" id="username"/>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fontSize" >Font size</label>
+									<select id="fontSize" >
+                                    <option value="14">14</option>
+                                    <option value="18">18</option>
+                                    <option value="24">24</option>
+                                    <option value="30">30</option>
+                                    <option value="36">36</option>
+                                    <option value="42">42</option>
+                                    <option value="48">48</option>
+                                    <option value="54">54</option>
+                                    <option value="60">60</option>
+                                    <option value="72" selected="selected">72</option>
+                                    <option value="84">84</option>
+                                    <option value="96">96</option>
+                                 </select>
+					
+                </div>
+
+				<div data-role="fieldcontain">
+									<label for="fontFamily">Font Family</label>
+	                                    <select id="fontFamily">
+                                       <option value="Arial,sans-serif">Arial</option>
+                                       <option value="Comic Sans MS,cursive">Comic</option>
+                                       <option value="Courier New,monospace">Courier New</option>
+                                       <option value="Helveticaa,sans-serif">Helvetica</option>
+                                       <option value="Tahoma,sans-serif">Tahoma</option>
+                                       <option value="Trebuchet MS,sans-serif">Trebuchet</option>
+                                       <option value="Verdana,sans-serif" selected="selected">Verdana</option>
+                                    </select>
+					
+                </div>
+
+				
+				
+				<div data-role="fieldcontain">
+									<label for="backColor">Background Color</label>
+                                    <select id="backColor">
+                                       <option value="000000">Black</option>
+                                       <option value="00008b">Dark Blue</option>
+                                       <option value="0000ff">Blue</option>
+                                       <option value="008000">Green</option>
+                                       <option value="008b8b">Dark Cyan</option>
+                                       <option value="00ff00">Lime</option>
+                                       <option value="00ffff">Aqua</option>
+                                       <option value="808000">Olive</option>
+                                       <option value="808080">Gray</option>
+                                       <option value="8b0000">Dark Red</option>
+                                       <option value="c0c0c0">Silver</option>
+                                       <option value="ff0000">Red</option>
+                                       <option value="ff00ff">Fuchsia</option>
+                                       <option value="ffff00">Yellow</option>
+                                       <option value="ffffff" selected="selected">White</option>
+                                    </select>
+					
+                </div>
+
+				
+				
+				
+				
+				<div data-role="fieldcontain">
+									<label for="foreColor">Text Color</label>
+                                    <select id="foreColor">
+                                       <option value="000000" selected="selected">Black</option>
+                                       <option value="00008b">Dark Blue</option>
+                                       <option value="0000ff">Blue</option>
+                                       <option value="008000">Green</option>
+                                       <option value="008b8b">Dark Cyan</option>
+                                       <option value="00ff00">Lime</option>
+                                       <option value="00ffff">Aqua</option>
+                                       <option value="808000">Olive</option>
+                                       <option value="808080">Gray</option>
+                                       <option value="8b0000">Dark Red</option>
+                                       <option value="c0c0c0">Silver</option>
+                                       <option value="ff0000">Red</option>
+                                       <option value="ff00ff">Fuchsia</option>
+                                       <option value="ffff00">Yellow</option>
+                                       <option value="ffffff">White</option>
+                                    </select>
+					
+                </div>
+
+				
+
+                <input type="button" data-theme="b" name="submit" id="submit" value="Go">
+            </fieldset>
+        </form>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+
+    </div>
+</div>
+
+
+
+<div data-role="page" id="second">
+	<iframe id="CART" src="" allowtransparency="true" style="z-index: 100; margin: 0px; padding: 0px; position: absolute; top:0px; left:0px;  height: 100%; width: 100%; border: none; background: #FFFFFF;"></iframe>
+</div>
+
+
+</body>
+</html>
+
+
