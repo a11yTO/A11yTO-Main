@@ -1,6 +1,6 @@
 # #a11yTO Site README
 
-We used [the simple and static benefits of Jekyll](https://jekyllrb.com/) to help manage our site. You'll need to have Jekyll installed on your computer to manipulate the site and see those changes locally. Installing Jekyll is relatively easy to do. 
+We used [the simple and static benefits of Jekyll](https://jekyllrb.com/) to help manage our site. You'll need to have Jekyll installed on your computer to manipulate the site and see those changes locally. Installing Jekyll is relatively easy to do.
 
 On a Mac, on the command line (The Terminal) type:
 
@@ -20,16 +20,22 @@ As it's [stated on the welcome page of the Jekyll Docs "You create your content 
 
 Which means if a contributor wanted to change some text on our home page for example, open `index.html`, change what you wanted to change, save, then push your changes to Github. We only mention installing Jekyll first as a way to be able to view your changes on your computer.
 
-## Changing or updating site content
+## Changing or updating our site
 
-Hopefully the biggest hurdle one would need to clear in order to perform a change or update, assuming first one has some understang of HTML, is locating the content which will require attention. 
+### Content
+
+Hopefully the biggest hurdle one would need to clear in order to perform a change or update, assuming first one has some understang of HTML, is locating the content which will require attention.
 
 Aside from content that can be found in individual page files (`organizers.html`, as another example), here are some areas of our site that frequently require changes or updates, and where in this repository one would find them:
 
-- __Main Navigation__ is in the `_includes` directory and in the file `header.html`.
-- __Sponsors__ is in the `_includes` directory and in the file `sponsors.html`.
-- __Footer Content__ is in the `_includes` directory and in the file `footer.html`.
+- **Main Navigation** is in the `_includes` directory and in the file `header.html`.
+- **Sponsors** is in the `_includes` directory and in the file `sponsors.html`.
+- **Footer Content** is in the `_includes` directory and in the file `footer.html`.
 
-Elements, such as a single page titles or single page descriptions, can be found in the individual page file's [Front Matter](https://jekyllrb.com/docs/front-matter/), the content between triple-dashed lines at the beginning of the file. The front page (`index.html`) is the only page in this repository that doesn't contain a title value in its Front Matter. It's literally handled in the `_includes/header.html` file, via a reference to the site title, versus a page title. The site title can be found in the `config.yml` file. 
+Elements, such as a single page titles or single page descriptions, can be found in the individual page file's [Front Matter](https://jekyllrb.com/docs/front-matter/), the content between triple-dashed lines at the beginning of the file. The front page (`index.html`) is the only page in this repository that doesn't contain a title value in its Front Matter. It's literally handled in the `_includes/header.html` file, via a reference to the site title, versus a page title. The site title can be found in the `config.yml` file.
 
 Finally, individual page file's Front Matter also contains other elements, like page ID. For the vast majority of updates these elements will not require any changes.
+
+### Styles
+
+We've used [Syntactically Awesome Style Sheets (Sass)](https://sass-lang.com/) to develop our sites styles.
