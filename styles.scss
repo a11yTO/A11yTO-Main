@@ -23,10 +23,8 @@ $heading-font-stack: "League Spartan", "Open Sans", sans-serif;
 $link-color: $secondary-color;
 $link-underline: 1px solid $brand-color;
 
-$logo-height: 4em;
-
-$main-nav-mid-breakpoint: 30em;
-$main-nav-wide-breakpoint: 40em;
+$main-nav-mid-breakpoint: 35em;
+$main-nav-wide-breakpoint: 45em;
 
 /* -------------------------------------------------------------------------
  * Global reset
@@ -260,9 +258,12 @@ a.current-page {
   text-align: center;
 }
 .branding {
-  height: $logo-height;
+  height: 6em;
   padding: 0.33em 0;
   width: auto;
+}
+.main-navigation {
+  margin: 0.5em 0 0;
 }
 .nav-menu {
   margin: 0;
@@ -294,30 +295,29 @@ a.current-page {
 }
 @supports (flex-wrap: wrap) {
   .site-header {
-    text-align: center;
-  }
-  .nav-menu,
-  .social-icons {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-navigation {
+    margin: 0.85em 0 0;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .social-icons {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    li {
+      display: block;
+    }
   }
   @media screen and (min-width: $main-nav-mid-breakpoint) {
     .nav-menu {
       flex-direction: row;
-      justify-content: center;
-      padding: 1em 0;
-      li {
-        margin: 0 0.75em;
-      }
       .tickets {
         margin: 0 0.5em;
       }
@@ -331,13 +331,15 @@ a.current-page {
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
     .site-header {
-      text-align: left;
-    }
-    .main-navigation {
-      float: right;
-    }
-    .nav-menu {
-      justify-content: flex-end;
+      flex-direction: row;
+      justify-content: space-between;
+      .branding {
+        align-self: flex-start;
+        height: 5em;
+      }
+      .nav-menu {
+        margin: 0.65em 0 0;
+      }
     }
     .irl .nav-menu {
       padding: 1.8em 0;
