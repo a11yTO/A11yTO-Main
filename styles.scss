@@ -21,7 +21,6 @@ $base-font-size: 112.5%;
 $main-font-stack: "Open Sans", sans-serif;
 $heading-font-stack: "League Spartan", "Open Sans", sans-serif;
 $link-color: $secondary-color;
-$link-underline: 1px solid $brand-color;
 
 $main-nav-mid-breakpoint: 35em;
 $main-nav-wide-breakpoint: 45em;
@@ -177,9 +176,7 @@ ol {
  * Link styles
  * ------------------------------------------------------------------------- */
  a {
-  border-bottom: $link-underline;
   color: $link-color;
-  text-decoration: none;
   &:active {
     border: 0;
     color: $secondary-color;
@@ -195,9 +192,10 @@ a:focus {
     color: $main-font-color;
     border-bottom: 0;
     padding: 0.33em;
+    text-decoration: none;
   }
   a.current-page {
-    border-bottom: $link-underline;
+    text-decoration: underline;
   }
   .tickets a {
     background: $brand-color;
@@ -223,7 +221,6 @@ a.current-page {
 }
 @supports (text-underline-offset: 0) {
   a {
-    border: 0;
     text-decoration-line: underline;
     text-decoration-color: $brand-color;
     text-decoration-thickness: 1px;
