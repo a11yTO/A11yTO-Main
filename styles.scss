@@ -78,7 +78,7 @@ body {
 /* -------------------------------------------------------------------------
  * Typography structure & style
  * ------------------------------------------------------------------------- */
-body {
+ body {
   background: $background;
   color: $main-font-color;
   font-family: $main-font-stack;
@@ -178,19 +178,17 @@ ol {
  a {
   color: $link-color;
   &:active {
-    border: 0;
     color: $secondary-color;
   }
 }
 *:focus,
 a:focus {
-  border: 0;
   outline: 2px solid black;
+  text-decoration: none;
 }
 .main-nav-menu {
   a {
     color: $main-font-color;
-    border-bottom: 0;
     padding: 0.33em;
     text-decoration: none;
   }
@@ -207,12 +205,9 @@ a:focus {
   }
 }
 a.current-page {
-  border: 0;
   color: $secondary-color;
   font-weight: bold;
-  &:focus {
-    border: 0;
-  }
+  text-decoration: underline;
 }
 .social-icons {
   a {
@@ -224,26 +219,25 @@ a.current-page {
     text-decoration-line: underline;
     text-decoration-color: $brand-color;
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.3em;
-    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
   }
   .main-nav-menu a,
   .tickets a,
   .branded-events a {
     text-decoration-line: none;
   }
-  a.current-page {
-    border: 0;
-    text-decoration-line: underline;
-  }
   .main-nav-menu a.current-page {
-    border: 0;
+    text-decoration-color: $brand-color; 
   }
   footer a.current-page {
     text-decoration-line: none;
   }
+  .staged a {
+    color: $inverted-font-color;
+    text-decoration-color: $inverted-font-color;
+  }
 }
- /* End link styles */
+/* End link styles */
 
 /* -------------------------------------------------------------------------
  * Page structure & styles
@@ -251,25 +245,30 @@ a.current-page {
  .site-header {
   background: $background;
   border-bottom: 3px solid $brand-color;
-  padding: 1em 5% 0.65em;
+  padding: 1.25em 5%;
   text-align: center;
 }
 .branding {
-  height: 4.25em;
-  padding: 0.33em 0;
-  width: auto;
+  font-size: $base-font-size;
+}
+.branding-logo {
+  height: auto;
+  width: 8em;
 }
 .main-nav-menu {
-  margin: 0.5em 0 0;
+  margin: 0;
   ul {
     margin: 0;
     padding: 0;
     li {
       list-style: none;
-      margin: 0 0.25em 1em;
+      margin: 0 0.25em 0.75em;
     }
     .tickets {
-      margin: 0.75em 0 1.75em;
+      margin: 1.5em 0 1.75em;
+    }
+    .social {
+      margin: 0;
     }
   }
 }
@@ -300,18 +299,27 @@ a.current-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0.9em 0 -1em;
-  }
-  .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    li {
-      display: block;
-      padding: 0 0.2em;
+    .tickets {
+      margin-top: 0.5em;
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
+        display: block;
+        margin-bottom: 0;
+        padding: 0 0.2em;
+      }
     }
   }
   @media screen and (min-width: $main-nav-mid-breakpoint) {
+    .site-header {
+      padding-bottom: 0.75em;
+    }
+    .branding {
+      padding-bottom: 0.75em;
+    }
     .main-nav-menu .nav-list {
       flex-direction: row;
       .tickets {
@@ -324,13 +332,19 @@ a.current-page {
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
     .site-header {
+      padding-bottom: 0.65em;
+    }
+    .branding {
+      padding: 0;
+    }
+    .site-header {
       flex-direction: row;
       justify-content: space-between;
       .branding {
         align-self: flex-start;
       }
       .main-nav-menu .nav-list {
-        margin: 0.75em 0 -0.5em;
+        margin: 0.75em 0;
       }
     }
     .irl .main-nav-menu {
