@@ -34,7 +34,7 @@
   <p class="staged">This is a preview of our site. <a href="https://a11yto.com">View the live content</a>.</p>
   {% endif %}
   <header class="site-header">
-    <div class="branding">{%- include logo.html -%}</div>
+    {% if page.id == 'home' %}<h1 class="branding">{%- include logo.html -%}</h1>{% else %}<div class="branding">{%- include logo.html -%}</div>{% endif %}
     <nav id="site-navigation" class="main-nav-menu">
       <ul class="nav-list">
         <li>

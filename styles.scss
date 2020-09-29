@@ -331,9 +331,6 @@ a.current-page {
     }
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
-    .site-header {
-      padding-bottom: 0.65em;
-    }
     .branding {
       padding: 0;
     }
@@ -344,7 +341,7 @@ a.current-page {
         align-self: flex-start;
       }
       .main-nav-menu .nav-list {
-        margin: 0.75em 0;
+        margin: 0.85em 0;
       }
     }
     .irl .main-nav-menu {
