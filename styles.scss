@@ -490,53 +490,6 @@ footer {
 /* End page structure & styles */
 
 /* -------------------------------------------------------------------------
- * Forms
- * ------------------------------------------------------------------------- */
-form {
-  width: 600px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 0) {
-  form {
-    width: auto;
-    max-width: 31.11em;
-  }
-}
-label {
-  font-weight: bold;
-}
-input,
-textarea {
-  border: 0;
-  display: block;
-  font-family: $main-font-stack;
-  font-size: $base-font-size;
-  margin-bottom: 0.5em;
-  outline: 1px solid #333;
-  padding: 0.25em;
-  width: 100%;
-}
-textarea {
-  height: 10em;
-}
-.required,
-.attention {
-  color: $error;
-  font-size: 65%;
-  font-weight: normal;
-  font-style: italic;
-}
-button {
-  background: $brand-color;
-  border: 0;
-  border-radius: 1.5em;
-  color: $inverted-font-color;
-  font-size: $base-font-size;
-  font-weight: bold;
-  padding: 0.5em 2em;
-}
-
-/* -------------------------------------------------------------------------
 * Camp schedule table
 * ------------------------------------------------------------------------- */
 .tg  {
@@ -659,23 +612,29 @@ button {
 /* End #a11yTO.com Branded Events structure & styles */
 
 /* -------------------------------------------------------------------------
- * Staged site structure & styles
+ * Attention banner structure & styles
  * ------------------------------------------------------------------------- */
-.staged {
+ .attention {
   background: black;
-  color: $inverted-font-color;
-  font-size: 75%;
+  color: white;
+  font-size: 85%;
   line-height: 1.1;
+  font-weight: bold;
   margin: 0;
-  padding: 0.5em;
+  padding: 1em;
   text-align: center;
   width: 100%;
 }
-.staged a {
-  border-bottom: 1px solid white;
-  color: $inverted-font-color;
+.attention a {
+  color: white;
+  white-space: nowrap;
 }
-.staged a:focus {
-  border: 0;
+@supports (text-underline-offset: 0) {
+  .attention a {
+    text-decoration-color: white;
+  }
+}
+.attention a:focus {
+  text-decoration: none;  
   outline: 2px solid white;
 }
