@@ -487,6 +487,22 @@ article,
 footer {
   padding: 0.25em 5% 1em;
 }
+@media screen and (min-width: 45em) {
+  footer ul {
+    padding: 0;
+  }
+  footer li {
+    display: inline;
+    list-style: none;
+    padding: 0 0.1em;
+  }
+  footer li:before {
+    content: " – ";
+  }
+  footer li:first-child:before {
+    content: none;
+  }
+}
 /* End page structure & styles */
 
 /* -------------------------------------------------------------------------
