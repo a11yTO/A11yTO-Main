@@ -247,7 +247,7 @@ a[aria-current] {
 /* -------------------------------------------------------------------------
  * Page structure & styles
  * ------------------------------------------------------------------------- */
-.site-header {
+.masthead {
   background: $background;
   border-bottom: 3px solid $brand-color;
   padding: 1.25em 5%;
@@ -296,7 +296,7 @@ a[aria-current] {
   }
 }
 @supports (flex-wrap: wrap) {
-  .site-header {
+  .masthead {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,7 +320,7 @@ a[aria-current] {
     }
   }
   @media screen and (min-width: $main-nav-mid-breakpoint) {
-    .site-header {
+    .masthead {
       padding-bottom: 0.75em;
     }
     .branding {
@@ -340,7 +340,7 @@ a[aria-current] {
     .branding {
       padding: 0;
     }
-    .site-header {
+    .masthead {
       flex-direction: row;
       justify-content: space-between;
       .branding {
