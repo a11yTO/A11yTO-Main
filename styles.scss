@@ -257,23 +257,28 @@ a[aria-current] {
   font-size: $base-font-size;
 }
 .branding-logo {
-  height: auto;
-  width: 8em;
+  color: $brand-color;
+  fill: $brand-color;
+  height: 3.25em;
+  width: auto;
 }
 .main-nav-menu {
-  margin: 0;
+  margin: 0.25em 0 0;
   ul {
     margin: 0;
     padding: 0;
     li {
       list-style: none;
-      margin: 0 0.25em 0.75em;
+      margin: 0 0.5em 1em;
     }
     .tickets {
       margin: 1.5em 0 1.75em;
     }
     .social {
       margin: 0;
+      li {
+        margin: 0 0.25em 1em;
+      }
     }
   }
 }
@@ -337,6 +342,9 @@ a[aria-current] {
     }
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
+    .masthead {
+      padding-bottom: 0.65em;
+    }
     .branding {
       padding: 0;
     }
@@ -347,19 +355,13 @@ a[aria-current] {
         align-self: flex-start;
       }
       .main-nav-menu .nav-list {
-        margin: 0.85em 0;
+        margin: 0.75em 0;
       }
     }
     .irl .main-nav-menu {
       padding: 1.8em 0;
     }
   }
-}
-.event {
-  background: $brand-color;
-  color: $inverted-font-color;
-  overflow: hidden;
-  padding: 1.5em 5%;
 }
 .event-detail {
   list-style: none;
