@@ -575,6 +575,7 @@ footer {
 .branded-events {
   list-style: none;
   padding: 0;
+  margin: 0;
   text-align: center;
   li {
     list-style: none;
@@ -589,7 +590,6 @@ footer {
     font-weight: bold;
     padding: 0.75em;
     text-align: center;
-    width: 100%;
   }
   a.camp {
     background: $camp-brand-color;
@@ -604,22 +604,20 @@ footer {
     background: $gaming-brand-color;
   }
 }
-@supports (flex-wrap: wrap) {
+@media screen and (min-width: 30em) {
+  .branded-events {
+    a {
+      margin: 0 15%;
+    }
+  }
+}
+@media screen and (min-width: 53em) {
   .branded-events {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-  }
-  @media screen and (min-width: 60em) {
-    .branded-events {
-      flex-direction: row;
-      justify-content: space-evenly;
-      li {
-        a {
-          width: 28em;
-        }
-      }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+      width: 13em;
     }
   }
 }
