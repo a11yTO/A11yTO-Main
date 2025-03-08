@@ -1,12 +1,12 @@
 ﻿:root {
-  --dark: #222222;
-  --light: #ffffff;
+  --dark: rgb(34 34 34); /* #222222 */
+  --light: rgb(255 255 255); /* #ffffff */
 
-  --main-brand-color: #000000;
-  --meetup-brand-color: #b30a2e;
-  --camp-brand-color: #076800;
-  --conf-brand-color: #025b9f;
-  --gaming-brand-color: #d43d27;
+  --main-brand-color: rgb(0 0 0); /* #000000 */
+  --meetup-brand-color: rgb(179 10 46); /* #b30a2e */
+  --camp-brand-color: rgb(7 104 0); /* #076800 */
+  --conf-brand-color: rgb(2 91 159); /* #025b9f */
+  --gaming-brand-color: rgb(212 61 38); /* #d43d27 */
 
   --brand-color: var(--main-brand-color);
   --text-color: var(--dark);
