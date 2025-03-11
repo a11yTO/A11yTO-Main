@@ -15,7 +15,7 @@
   --inverse-background-color: var(--dark);
   --light-accent: var(--light);
   --dark-accent: var(--dark);
-  --link-color: rgb(2 91 159);
+  --link-color: rgb(2 91 159); /* #025b9f */
   --secondary-background: #edf5f8;
 
   --base-font-size: 112.5%;
@@ -153,8 +153,7 @@ h6 {
   margin-bottom: 0;
 }
 .sub-head {
-  font-size: 1.5rem;
-  margin: 0.5rem 0 0;
+  margin-top: 1rem;
 }
 .page-title + h2 {
   margin-top: 0.5rem;
@@ -178,7 +177,6 @@ h6 {
 }
 .team img {
   max-width: 14rem;
-  border-radius: 50%;
 }
 .colophon {
   padding: 0.5rem 5% 3rem;
@@ -238,26 +236,26 @@ h6 {
 
 body {
   background: #fff;
-  background: var(--background-color);
+  background: var(--background-color, rgb(255 255 255));
   color: #222222;
-  color: var(--text-color);
+  color: var(--text-color, rgb(34 34 34));
   font-family: "Open Sans", sans-serif;
-  font-family: var(--font-stack);
+  font-family: var(--font-stack, "Open Sans", sans-serif);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 112.5%;
-  font-size: var(--base-font-size);
+  font-size: var(--base-font-size, 112.5%);
   font-variation-settings: "wdth" 100;
   line-height: 1.5;
 }
 .site-header {
   border-bottom: 3px solid #000;
-  border-color: var(--brand-color);
+  border-color: var(--brand-color, rgb(0 0 0));
 }
 .branding-logo {
   fill: #000;
-  fill: var(--brand-color);
+  fill: var(--brand-color, rgb(0 0 0));
 }
 .masthead,
 .upcoming-event,
@@ -269,23 +267,23 @@ body {
 }
 .main-nav-menu a {
   color: #222222;
-  color: var(--text-color);
+  color: var(--text-color, rgb(34 34 34));
   text-decoration: none;
 }
 .icon {
   fill: #000;
-  fill: var(--brand-color);
+  fill: var(--brand-color, rgb(0 0 0));
 }
 .upcoming-event {
   background-color: #000;
-  background-color: var(--brand-color);
+  background-color: var(--brand-color, rgb(0 0 0));
   color: #fff;
-  color: var(--inverse-text-color);
+  color: var(--inverse-text-color, rgb(255 255 255));
   font-weight: bold;
 }
 .event-host {
   color: #fff;
-  color: var(--inverse-text-color);
+  color: var(--inverse-text-color, rgb(255 255 255));
   font-size: 3.375rem;
 }
 .event-title {
@@ -301,9 +299,9 @@ h4,
 h5,
 h6 {
   color: #000;
-  color: var(--brand-color);
+  color: var(--brand-color, rgb(0 0 0));
   font-family: "League Spartan", sans-serif;
-  font-family: var(--heading-font-stack);
+  font-family: var(--heading-font-stack, "League Spartan", sans-serif);
   font-size: 2.25rem;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -327,31 +325,31 @@ strong {
 }
 .site-footer {
   border-top: 1px solid #000;
-  border-color: var(--brand-color);
+  border-color: var(--brand-color, rgb(0 0 0));
 }
 
 /* -------------------------------------------------------------------------
  * Link styles
  * ------------------------------------------------------------------------- */
 a {
-  color: rgb(2 91 159);
-  color: var(--link-color);
+  color: #025b9f;
+  color: var(--link-color, rgb(2 91 159));
   text-decoration-color: #000;
-  text-decoration-color: var(--brand-color);
+  text-decoration-color: var(--brand-color, rgb(0 0 0));
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.15rem;
 }
 a:focus,
 .inverse:focus {
   outline: 2px solid #000;
-  outline-color: var(--dark-accent);
+  outline-color: var(--dark-accent, rgb(0 0 0));
   outline-offset: 3px;
   text-decoration: none;
   z-index: 1000;
 }
 .inverse:focus {
   outline-color: #fff;
-  outline-color: var(--light-accent);
+  outline-color: var(--light-accent, rgb(255 255 255));
 }
 a:focus:not(:focus-visible),
 .inverse:focus:not(:focus-visible) {
@@ -360,15 +358,15 @@ a:focus:not(:focus-visible),
 a:focus-visible,
 .inverse:focus-visible {
   outline: max(2px, 0.175rem) solid #000;
-  outline-color: var(--dark-accent);
+  outline-color: var(--dark-accent, rgb(0 0 0));
 }
 .inverse:focus-visible {
   outline-color: #fff;
-  outline-color: var(--light-accent);
+  outline-color: var(--light-accent, rgb(255 255 255));
 }
 .skip-link {
   background-color: #fff;
-  background-color: var(--background-color);
+  background-color: var(--background-color, rgb(255 255 255));
   padding: 0.25rem 0.65rem;
   position: absolute;
   top: 0.75rem;
@@ -381,58 +379,56 @@ a:focus-visible,
 }
 .featured-link {
   background-color: #000;
-  background-color: var(--brand-color);
+  background-color: var(--brand-color, rgb(0 0 0));
   border-radius: 1.38em;
   color: #fff;
-  color: var(--inverse-text-color);
+  color: var(--inverse-text-color, rgb(255 255 255));
   font-weight: 700;
   font-size: 1.5rem;
   padding: 0.5rem 3rem;
   text-decoration: none;
 }
 .featured-link.inverse {
-  /* border: 0.075rem solid #fff;
-  border-color: var(--light-accent); */
   background-color: #fff;
-  background-color: var(--background-color);
+  background-color: var(--background-color, rgb(255 255 255));
   color: #222222;
-  color: var(--text-color);
+  color: var(--text-color, rgb(34 34 34));
 }
 .featured-link.meetup,
 .featured-link.gaming,
 .featured-link.camp,
 .featured-link.conf {
   color: #fff;
-  color: var(--inverse-text-color);
+  color: var(--inverse-text-color, rgb(255 255 255));
 }
 .featured-link.meetup {
   background-color: rgb(179 10 46);
-  background-color: var(--meetup-brand-color);
+  background-color: var(--meetup-brand-color, rgb(179 10 46));
 }
 .featured-link.gaming {
   background-color: rgb(212 61 38);
-  background-color: var(--gaming-brand-color);
+  background-color: var(--gaming-brand-color, rgb(212 61 38));
 }
 .featured-link.camp {
   background-color: rgb(7 104 0);
-  background-color: var(--camp-brand-color);
+  background-color: var(--camp-brand-color, rgb(7 104 0));
 }
 .featured-link.conf {
   background-color: rgb(2 91 159);
-  background-color: var(--conf-brand-color);
+  background-color: var(--conf-brand-color, rgb(2 91 159));
 }
 .main-nav-menu a[aria-current] {
   color: rgb(2 91 159);
   color: var(--link-color);
   font-weight: 700;
   text-decoration: underline;
-  text-decoration-color: var(--brand-color);
+  text-decoration-color: var(--brand-color, rgb(0 0 0));
   text-decoration-thickness: 2px;
   text-underline-offset: 0.2rem;
 }
 .colophon a[aria-current] {
   color: #222222;
-  color: var(--text-color);
+  color: var(--text-color, rgb(34 34 34));
   font-weight: 700;
   text-decoration: none;
 }
