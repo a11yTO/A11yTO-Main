@@ -15,7 +15,7 @@
   --inverse-background-color: var(--dark);
   --light-accent: var(--light);
   --dark-accent: var(--dark);
-  --link-color: #025b9f;
+  --link-color: rgb(2 91 159);
   --secondary-background: #edf5f8;
 
   --base-font-size: 112.5%;
@@ -239,7 +239,7 @@ h6 {
 body {
   background: #fff;
   background: var(--background-color);
-  color: #222;
+  color: #222222;
   color: var(--text-color);
   font-family: "Open Sans", sans-serif;
   font-family: var(--font-stack);
@@ -268,7 +268,7 @@ body {
   list-style: none;
 }
 .main-nav-menu a {
-  color: #000;
+  color: #222222;
   color: var(--text-color);
   text-decoration: none;
 }
@@ -334,7 +334,7 @@ strong {
  * Link styles
  * ------------------------------------------------------------------------- */
 a {
-  color: #025b9f;
+  color: rgb(2 91 159);
   color: var(--link-color);
   text-decoration-color: #000;
   text-decoration-color: var(--brand-color);
@@ -395,7 +395,7 @@ a:focus-visible,
   border-color: var(--light-accent); */
   background-color: #fff;
   background-color: var(--background-color);
-  color: #000;
+  color: #222222;
   color: var(--text-color);
 }
 .featured-link.meetup,
@@ -406,23 +406,23 @@ a:focus-visible,
   color: var(--inverse-text-color);
 }
 .featured-link.meetup {
-  background-color: #b30a2e;
+  background-color: rgb(179 10 46);
   background-color: var(--meetup-brand-color);
 }
 .featured-link.gaming {
-  background-color: #d43d27;
+  background-color: rgb(212 61 38);
   background-color: var(--gaming-brand-color);
 }
 .featured-link.camp {
-  background-color: #076800;
+  background-color: rgb(7 104 0);
   background-color: var(--camp-brand-color);
 }
 .featured-link.conf {
-  background-color: #025b9f;
+  background-color: rgb(2 91 159);
   background-color: var(--conf-brand-color);
 }
 .main-nav-menu a[aria-current] {
-  color: #025b9f;
+  color: rgb(2 91 159);
   color: var(--link-color);
   font-weight: 700;
   text-decoration: underline;
@@ -431,7 +431,7 @@ a:focus-visible,
   text-underline-offset: 0.2rem;
 }
 .colophon a[aria-current] {
-  color: #000;
+  color: #222222;
   color: var(--text-color);
   font-weight: 700;
   text-decoration: none;
