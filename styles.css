@@ -22,6 +22,11 @@
   --font-stack: "Open Sans", sans-serif;
   --heading-font-stack: "League Spartan", serif;
 }
+
+/* -------------------------------------------------------------------------
+ * Reset
+ * ------------------------------------------------------------------------- */
+
 html {
   box-sizing: border-box;
 }
@@ -36,148 +41,10 @@ body {
 }
 
 /* -------------------------------------------------------------------------
- * Utility class to hide content visually while keeping it screen reader-accessible.
- * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ * Layout
  * ------------------------------------------------------------------------- */
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
 
-/* -------------------------------------------------------------------------
- * Link styles
- * ------------------------------------------------------------------------- */
-a {
-  color: #025b9f;
-  color: var(--link-color);
-  text-decoration-color: #000;
-  text-decoration-color: var(--brand-color);
-  text-decoration-thickness: 0.1rem;
-  text-underline-offset: 0.15rem;
-}
-a:focus {
-  outline: 2px solid #000;
-  outline-color: var(--dark-accent);
-  outline-offset: 3px;
-  text-decoration: none;
-  z-index: 1000;
-}
-a:focus:not(:focus-visible) {
-  outline: none;
-}
-a:focus-visible {
-  outline: max(2px, 0.175rem) solid #000;
-  outline-color: var(--dark-accent);
-  outline-offset: 3px;
-  text-decoration: none;
-  z-index: 1000;
-}
-.featured-link {
-  background-color: #000;
-  background-color: var(--brand-color);
-  border-radius: 1.38em;
-  color: #fff;
-  color: var(--inverse-text-color);
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding: 0.5rem 3rem;
-  text-decoration: none;
-}
-.featured-link.inverse {
-  border: 0.075rem solid #fff;
-  border-color: var(--light-accent);
-  background-color: #fff;
-  background-color: var(--background-color);
-  color: #000;
-  color: var(--text-color);
-}
-.featured-link.meetup,
-.featured-link.gaming,
-.featured-link.camp,
-.featured-link.conf {
-  color: #fff;
-  color: var(--inverse-text-color);
-}
-.featured-link.meetup {
-  background-color: #b30a2e;
-  background-color: var(--meetup-brand-color);
-}
-.featured-link.gaming {
-  background-color: #d43d27;
-  background-color: var(--gaming-brand-color);
-}
-.featured-link.camp {
-  background-color: #076800;
-  background-color: var(--camp-brand-color);
-}
-.featured-link.conf {
-  background-color: #025b9f;
-  background-color: var(--conf-brand-color);
-}
-.inverse:focus {
-  outline-color: #fff;
-  outline-color: var(--light-accent);
-}
-.inverse:focus:not(:focus-visible) {
-  outline: none;
-}
-.inverse:focus-visible {
-  outline-color: #fff;
-  outline-color: var(--light-accent);
-}
-.main-nav-menu a[aria-current] {
-  color: #025b9f;
-  color: var(--link-color);
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: var(--brand-color);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.2rem;
-}
-.colophon a[aria-current] {
-  color: #000;
-  color: var(--text-color);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-body {
-  background: #fff;
-  background: var(--background-color);
-  color: #222;
-  color: var(--text-color);
-  font-family: "Open Sans", sans-serif;
-  font-family: var(--font-stack);
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 112.5%;
-  font-size: var(--base-font-size);
-  font-variation-settings: "wdth" 100;
-  line-height: 1.5;
-}
-.skip-link {
-  background-color: #fff;
-  background-color: var(--background-color);
-  padding: 0.25rem 0.65rem;
-  position: absolute;
-  top: 0.75rem;
-  left: -9999rem;
-  z-index: 10000;
-}
-.skip-link:focus {
-  left: 0.75rem;
-  outline-offset: 0;
-  text-decoration: underline;
-}
 .site-header {
-  border-bottom: 3px solid #000;
-  border-color: var(--brand-color);
   padding-top: 1.5rem;
 }
 .masthead,
@@ -189,24 +56,18 @@ body {
 .upcoming-event,
 .colophon {
   padding: 0 5%;
-  text-align: center;
 }
 .branding-logo {
   display: block;
-  fill: #000;
-  fill: var(--brand-color);
   height: 4.25rem;
   margin: 0 auto;
   width: auto;
 }
-
 .main-nav-menu li {
   list-style: none;
   margin: 0 0.5rem 1rem;
 }
 .main-nav-menu a {
-  color: #000;
-  color: var(--text-color);
   padding: 0.33rem;
   text-decoration: none;
 }
@@ -227,112 +88,8 @@ body {
   margin: 0 0.65rem;
 }
 .icon {
-  fill: #000;
-  fill: var(--brand-color);
   width: 1.75rem;
 }
-.upcoming-event {
-  background-color: #000;
-  background-color: var(--brand-color);
-  color: #fff;
-  color: var(--inverse-text-color);
-  font-weight: bold;
-  overflow: auto;
-  padding: 1rem 5% 1.5rem;
-}
-.event-announcement {
-  margin: 0 0 0.5rem;
-}
-.event-host {
-  color: #fff;
-  color: var(--inverse-text-color);
-  font-size: 3.375rem;
-  margin: 0;
-}
-.event-title {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.event-specifics {
-  list-style: none;
-  padding: 0;
-}
-.event-details {
-  margin-top: 1.5rem;
-}
-main,
-.sponsorships {
-  margin: 0 auto;
-  padding: 0 5%;
-  margin-bottom: 3rem;
-  max-width: 50rem;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #000;
-  color: var(--brand-color);
-  font-family: "League Spartan", sans-serif;
-  font-family: var(--heading-font-stack);
-  font-size: 2.25rem;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.1;
-  margin-bottom: 0;
-}
-.sub-head {
-  font-size: 1.5rem;
-  margin: 0.5rem 0 0;
-}
-.page-title + h2 {
-  margin-top: 0.5rem;
-}
-strong {
-  font-weight: 700;
-}
-.branded-events {
-  text-align: center;
-}
-.team {
-  border: 0;
-  list-style: none;
-  padding: 0;
-}
-.team li {
-  text-align: center;
-  margin: 1.25em;
-}
-.team p {
-  margin: 0;
-}
-.team img {
-  max-width: 14rem;
-  border-radius: 50%;
-}
-.site-footer {
-  border-top: 1px solid #000;
-  border-color: var(--brand-color);
-}
-.colophon {
-  padding: 0.5rem 5% 3rem;
-  text-align: center;
-}
-.colophon ul {
-  list-style: none;
-  padding: 0;
-}
-.colophon li {
-  display: inline;
-  margin: 0 0.5rem;
-}
-.colophon a {
-  display: inline-block;
-}
-
 @supports (flex-wrap: wrap) {
   @media (min-width: 48rem) {
     .site-header {
@@ -361,13 +118,81 @@ strong {
   }
 }
 
+.upcoming-event {
+  overflow: auto;
+  padding: 1rem 5% 1.5rem;
+}
+.event-announcement {
+  margin: 0 0 0.5rem;
+}
+.event-host {
+  margin: 0;
+}
+.event-title {
+  margin: 0;
+}
+.event-specifics {
+  padding: 0;
+}
+.event-details {
+  margin-top: 1.5rem;
+}
+main,
+.sponsorships {
+  margin: 0 auto;
+  padding: 0 5%;
+  margin-bottom: 3rem;
+  max-width: 50rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+.sub-head {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+.page-title + h2 {
+  margin-top: 0.5rem;
+}
 @media (min-width: 35rem) {
   .page-title {
     font-size: 3.375rem;
     margin-top: 1.5rem;
   }
 }
-
+.team {
+  border: 0;
+  list-style: none;
+  padding: 0;
+}
+.team li {
+  margin: 1.25em;
+}
+.team p {
+  margin: 0;
+}
+.team img {
+  max-width: 14rem;
+  border-radius: 50%;
+}
+.colophon {
+  padding: 0.5rem 5% 3rem;
+}
+.colophon ul {
+  padding: 0;
+}
+.colophon li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+.colophon a {
+  display: inline-block;
+}
 @supports (display: grid) {
   @media (min-width: 50rem) {
     main,
@@ -405,4 +230,223 @@ strong {
   .team img {
     max-width: 11rem;
   }
+}
+
+/* -------------------------------------------------------------------------
+ * Styles
+ * ------------------------------------------------------------------------- */
+
+body {
+  background: #fff;
+  background: var(--background-color);
+  color: #222;
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-stack);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 112.5%;
+  font-size: var(--base-font-size);
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
+.site-header {
+  border-bottom: 3px solid #000;
+  border-color: var(--brand-color);
+}
+.branding-logo {
+  fill: #000;
+  fill: var(--brand-color);
+}
+.masthead,
+.upcoming-event,
+.colophon {
+  text-align: center;
+}
+.main-nav-menu li {
+  list-style: none;
+}
+.main-nav-menu a {
+  color: #000;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.icon {
+  fill: #000;
+  fill: var(--brand-color);
+}
+.upcoming-event {
+  background-color: #000;
+  background-color: var(--brand-color);
+  color: #fff;
+  color: var(--inverse-text-color);
+  font-weight: bold;
+}
+.event-host {
+  color: #fff;
+  color: var(--inverse-text-color);
+  font-size: 3.375rem;
+}
+.event-title {
+  font-size: 1.5rem;
+}
+.event-specifics {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  color: var(--brand-color);
+  font-family: "League Spartan", sans-serif;
+  font-family: var(--heading-font-stack);
+  font-size: 2.25rem;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+}
+.sub-head {
+  font-size: 1.5rem;
+}
+strong {
+  font-weight: 700;
+}
+.branded-events {
+  text-align: center;
+}
+.team li {
+  text-align: center;
+}
+.team img {
+  border-radius: 50%;
+}
+.site-footer {
+  border-top: 1px solid #000;
+  border-color: var(--brand-color);
+}
+
+/* -------------------------------------------------------------------------
+ * Link styles
+ * ------------------------------------------------------------------------- */
+a {
+  color: #025b9f;
+  color: var(--link-color);
+  text-decoration-color: #000;
+  text-decoration-color: var(--brand-color);
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.15rem;
+}
+a:focus,
+.inverse:focus {
+  outline: 2px solid #000;
+  outline-color: var(--dark-accent);
+  outline-offset: 3px;
+  text-decoration: none;
+  z-index: 1000;
+}
+.inverse:focus {
+  outline-color: #fff;
+  outline-color: var(--light-accent);
+}
+a:focus:not(:focus-visible),
+.inverse:focus:not(:focus-visible) {
+  outline: none;
+}
+a:focus-visible,
+.inverse:focus-visible {
+  outline: max(2px, 0.175rem) solid #000;
+  outline-color: var(--dark-accent);
+}
+.inverse:focus-visible {
+  outline-color: #fff;
+  outline-color: var(--light-accent);
+}
+.skip-link {
+  background-color: #fff;
+  background-color: var(--background-color);
+  padding: 0.25rem 0.65rem;
+  position: absolute;
+  top: 0.75rem;
+  left: -9999rem;
+  z-index: 10000;
+}
+.skip-link:focus {
+  left: 0.75rem;
+  outline-offset: 0;
+}
+.featured-link {
+  background-color: #000;
+  background-color: var(--brand-color);
+  border-radius: 1.38em;
+  color: #fff;
+  color: var(--inverse-text-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+}
+.featured-link.inverse {
+  /* border: 0.075rem solid #fff;
+  border-color: var(--light-accent); */
+  background-color: #fff;
+  background-color: var(--background-color);
+  color: #000;
+  color: var(--text-color);
+}
+.featured-link.meetup,
+.featured-link.gaming,
+.featured-link.camp,
+.featured-link.conf {
+  color: #fff;
+  color: var(--inverse-text-color);
+}
+.featured-link.meetup {
+  background-color: #b30a2e;
+  background-color: var(--meetup-brand-color);
+}
+.featured-link.gaming {
+  background-color: #d43d27;
+  background-color: var(--gaming-brand-color);
+}
+.featured-link.camp {
+  background-color: #076800;
+  background-color: var(--camp-brand-color);
+}
+.featured-link.conf {
+  background-color: #025b9f;
+  background-color: var(--conf-brand-color);
+}
+.main-nav-menu a[aria-current] {
+  color: #025b9f;
+  color: var(--link-color);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--brand-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2rem;
+}
+.colophon a[aria-current] {
+  color: #000;
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------
+ * Utility class to hide content visually while keeping it screen reader-accessible.
+ * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ * ------------------------------------------------------------------------- */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
