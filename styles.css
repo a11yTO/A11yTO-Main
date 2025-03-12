@@ -250,11 +250,11 @@ body {
   line-height: 1.5;
 }
 .site-header {
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #000; /* brand color */
   border-color: var(--brand-color, rgb(0 0 0));
 }
 .branding-logo {
-  fill: #000;
+  fill: #000; /* brand color */
   fill: var(--brand-color, rgb(0 0 0));
 }
 .masthead,
@@ -271,11 +271,11 @@ body {
   text-decoration: none;
 }
 .icon {
-  fill: #000;
+  fill: #000; /* brand color */
   fill: var(--brand-color, rgb(0 0 0));
 }
 .upcoming-event {
-  background-color: #000;
+  background-color: #000; /* brand color */
   background-color: var(--brand-color, rgb(0 0 0));
   color: #fff;
   color: var(--inverse-text-color, rgb(255 255 255));
@@ -298,7 +298,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: #000; /* brand color */
   color: var(--brand-color, rgb(0 0 0));
   font-family: "League Spartan", sans-serif;
   font-family: var(--heading-font-stack, "League Spartan", sans-serif);
@@ -324,7 +324,7 @@ strong {
   border-radius: 50%;
 }
 .site-footer {
-  border-top: 1px solid #000;
+  border-top: 1px solid #000; /* brand color */
   border-color: var(--brand-color, rgb(0 0 0));
 }
 
@@ -334,15 +334,15 @@ strong {
 a {
   color: #025b9f;
   color: var(--link-color, rgb(2 91 159));
-  text-decoration-color: #000;
+  text-decoration-color: #000; /* brand color */
   text-decoration-color: var(--brand-color, rgb(0 0 0));
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.15rem;
 }
 a:focus,
 .inverse:focus {
-  outline: 2px solid #000;
-  outline-color: var(--dark-accent, rgb(0 0 0));
+  outline: 2px solid #222;
+  outline-color: var(--dark-accent, rgb(32 32 32));
   outline-offset: 3px;
   text-decoration: none;
   z-index: 1000;
@@ -357,8 +357,8 @@ a:focus:not(:focus-visible),
 }
 a:focus-visible,
 .inverse:focus-visible {
-  outline: max(2px, 0.175rem) solid #000;
-  outline-color: var(--dark-accent, rgb(0 0 0));
+  outline: max(2px, 0.175rem) solid #222;
+  outline-color: var(--dark-accent, rgb(32 32 32));
 }
 .inverse:focus-visible {
   outline-color: #fff;
@@ -378,7 +378,7 @@ a:focus-visible,
   outline-offset: 0;
 }
 .featured-link {
-  background-color: #000;
+  background-color: #000; /* brand color */
   background-color: var(--brand-color, rgb(0 0 0));
   border-radius: 1.38em;
   color: #fff;
