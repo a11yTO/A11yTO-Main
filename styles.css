@@ -138,6 +138,7 @@ body {
   margin-top: 1.5rem;
 }
 main,
+.travel,
 .sponsorships {
   padding: 0 5%;
   margin-bottom: 1.5rem;
@@ -161,6 +162,9 @@ h6 {
   .page-title {
     font-size: 3.375rem;
   }
+}
+.branded-events {
+  margin-bottom: 1.5rem;
 }
 .team {
   list-style: none;
