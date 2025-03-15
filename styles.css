@@ -64,16 +64,16 @@ body {
   margin: 0 auto;
   width: auto;
 }
-.main-nav-menu li {
-  list-style: none;
-  margin: 0 0.5rem 1rem;
-}
 .main-nav-menu a {
   padding: 0.33rem;
   text-decoration: none;
 }
 .nav-list {
+  margin: 0;
   padding: 0;
+}
+.nav-list li {
+  padding: 0.75rem 0;
 }
 .social li {
   display: inline;
@@ -92,7 +92,7 @@ body {
   width: 1.75rem;
 }
 @supports (flex-wrap: wrap) {
-  @media (min-width: 48rem) {
+  @media (min-width: 58rem) {
     .site-header {
       padding-top: 0;
     }
@@ -102,18 +102,20 @@ body {
       padding: 1rem 5%;
     }
     .main-nav-menu li {
-      margin: 0 0.5rem;
-    }
-    .social-icons li {
-      margin: 0 0.65rem;
+      margin: 0;
     }
     .nav-list {
       display: flex;
+      gap: 1rem;
       justify-content: center;
-      margin: 1rem 0;
+      padding: 1.125rem 0;
+    }
+    .nav-list li {
+      padding: 0;
     }
     .social-icons {
       display: flex;
+      gap: 1.5rem;
       justify-content: center;
     }
   }
@@ -138,10 +140,9 @@ body {
   margin-top: 1.5rem;
 }
 main,
-.travel,
 .sponsorships {
   padding: 0 5%;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
   max-width: 50rem;
 }
 h1,
@@ -152,19 +153,53 @@ h5,
 h6 {
   margin: 0;
 }
-.sub-head {
-  margin-top: 1rem;
-}
-.page-title + h2 {
-  margin-top: 0.5rem;
-}
 @media (min-width: 35rem) {
   .page-title {
     font-size: 3.375rem;
   }
 }
+.sub-head {
+  margin-bottom: 0.25rem;
+}
+h2 + .sub-head,
+h3 + .sub-head,
+h4 + .sub-head {
+  margin-top: 0.25rem;
+}
+article p,
+article ol,
+article ul {
+  margin: 0 0 1.5rem;
+}
 .branded-events {
   margin-bottom: 1.5rem;
+}
+.venue {
+  margin-top: 1.5rem;
+}
+.address {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.venue-address {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin: 0.75rem 0;
+  width: 100%;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 .team {
   list-style: none;
@@ -211,17 +246,26 @@ h6 {
     grid-column: 1/4;
     grid-row: 1/2;
   }
+  main,
+  .sponsorships {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
   main {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .sponsorships {
+  .venue {
     grid-column: 2/3;
     grid-row: 3/4;
   }
+  .sponsorships {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
   .site-footer {
     grid-column: 1/4;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
 }
 
@@ -376,23 +420,29 @@ a:focus-visible,
   background-color: #000; /* brand color */
   background-color: var(--brand-color, rgb(0 0 0));
   border-radius: 1.38em;
-  color: #fff;
+  color: #222;
   color: var(--inverse-text-color, rgb(255 255 255));
   font-weight: 700;
   font-size: 1.5rem;
   padding: 0.5rem 3rem;
   text-decoration: none;
+  white-space: nowrap;
+}
+.join-us .featured-link {
+  font-size: 1.125rem;
+  padding: 0.5rem 1.5rem;
 }
 .featured-link.inverse {
   background-color: #fff;
   background-color: var(--background-color, rgb(255 255 255));
-  color: #222222;
-  color: var(--text-color, rgb(34 34 34));
+  color: #000; /* brand color */
+  color: var(--brand-color, rgb(0 0 0));
 }
 .featured-link.meetup,
 .featured-link.gaming,
 .featured-link.camp,
-.featured-link.conf {
+.featured-link.conf,
+.join-us .featured-link {
   color: #fff;
   color: var(--inverse-text-color, rgb(255 255 255));
 }
