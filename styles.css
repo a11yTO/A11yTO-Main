@@ -154,11 +154,6 @@ h5,
 h6 {
   margin: 0;
 }
-@media (min-width: 35rem) {
-  .page-title {
-    font-size: 3.375rem;
-  }
-}
 .sub-head {
   margin-bottom: 0.25rem;
 }
@@ -213,6 +208,7 @@ article ul {
   margin: 0;
 }
 .team img {
+  height: auto;
   max-width: 14rem;
 }
 @supports (display: grid) {
@@ -220,6 +216,10 @@ article ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
     grid-gap: 1.5rem;
+    margin: 1rem 0 0;
+  }
+  .team li {
+    margin: 0;
   }
   .team img {
     max-width: 11rem;
@@ -291,11 +291,11 @@ body {
 }
 .site-header {
   border-bottom: 3px solid #000; /* brand color */
-  border-color: var(--brand-color, rgb(0 0 0));
+  border-color: var(--brand-color);
 }
 .branding-logo {
   fill: #000; /* brand color */
-  fill: var(--brand-color, rgb(0 0 0));
+  fill: var(--brand-color);
 }
 .masthead,
 .upcoming-event,
@@ -312,11 +312,11 @@ body {
 }
 .icon {
   fill: #000; /* brand color */
-  fill: var(--brand-color, rgb(0 0 0));
+  fill: var(--brand-color);
 }
 .upcoming-event {
   background-color: #000; /* brand color */
-  background-color: var(--brand-color, rgb(0 0 0));
+  background-color: var(--brand-color);
   color: #fff;
   color: var(--inverse-text-color, rgb(255 255 255));
   font-weight: bold;
@@ -339,7 +339,7 @@ h4,
 h5,
 h6 {
   color: #000; /* brand color */
-  color: var(--brand-color, rgb(0 0 0));
+  color: var(--brand-color);
   font-family: "League Spartan", sans-serif;
   font-family: var(--heading-font-stack, "League Spartan", sans-serif);
   font-size: 2.25rem;
@@ -347,6 +347,11 @@ h6 {
   font-weight: 700;
   font-style: normal;
   line-height: 1.1;
+}
+@media (min-width: 35rem) {
+  .page-title {
+    font-size: 3.375rem;
+  }
 }
 .sub-head {
   font-size: 1.5rem;
@@ -365,7 +370,7 @@ strong {
 }
 .site-footer {
   border-top: 1px solid #000; /* brand color */
-  border-color: var(--brand-color, rgb(0 0 0));
+  border-color: var(--brand-color);
 }
 
 /* -------------------------------------------------------------------------
@@ -375,7 +380,7 @@ a {
   color: #025b9f;
   color: var(--link-color, rgb(2 91 159));
   text-decoration-color: #000; /* brand color */
-  text-decoration-color: var(--brand-color, rgb(0 0 0));
+  text-decoration-color: var(--brand-color);
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.15rem;
 }
@@ -419,7 +424,7 @@ a:focus-visible,
 }
 .featured-link {
   background-color: #000; /* brand color */
-  background-color: var(--brand-color, rgb(0 0 0));
+  background-color: var(--brand-color);
   border-radius: 1.38em;
   color: #222;
   color: var(--inverse-text-color, rgb(255 255 255));
@@ -437,7 +442,7 @@ a:focus-visible,
   background-color: #fff;
   background-color: var(--background-color, rgb(255 255 255));
   color: #000; /* brand color */
-  color: var(--brand-color, rgb(0 0 0));
+  color: var(--brand-color);
 }
 .featured-link.meetup,
 .featured-link.gaming,
@@ -468,7 +473,7 @@ a:focus-visible,
   color: var(--link-color);
   font-weight: 700;
   text-decoration: underline;
-  text-decoration-color: var(--brand-color, rgb(0 0 0));
+  text-decoration-color: var(--brand-color);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.2rem;
 }
