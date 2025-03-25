@@ -18,7 +18,7 @@ email: info@a11yto.com
 identifier: main
 description: Accessibility Toronto
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://a11yto.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://a11yto.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
 twitter_username: a11yTO
 
