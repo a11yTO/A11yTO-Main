@@ -35,6 +35,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+:where(html) {
+  scrollbar-gutter: stable;
+}
 html,
 body {
   margin: 0;
@@ -46,21 +49,31 @@ body {
 
 .site-header {
   margin-bottom: 1.5rem;
-  padding-top: 1.5rem;
 }
-.masthead,
+.attention {
+  background-color: #000;
+  color: #fff;
+  color: var(--inverse-text-color);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 5% 0.75rem;
+  text-align: center;
+  width: 100%;
+}
+.masthead {
+  padding: 1.5rem 5% 0.5rem;
+}
 .colophon {
   margin: 0 auto;
   max-width: 75rem;
 }
-.masthead,
 .upcoming-event,
 .colophon {
   padding: 0 5%;
 }
 .branding-logo {
   display: block;
-  height: 4.25rem;
+  height: 4rem;
   margin: 0 auto;
   width: auto;
 }
@@ -99,6 +112,8 @@ body {
     .masthead {
       display: flex;
       justify-content: space-between;
+      margin-inline: auto;
+      max-inline-size: 75rem;
       padding: 1rem 5%;
     }
     .main-nav-menu li {
@@ -108,7 +123,7 @@ body {
       display: flex;
       gap: 1rem;
       justify-content: center;
-      padding: 1.125rem 0;
+      padding: 1rem 0;
     }
     .nav-list li {
       padding: 0;
@@ -147,6 +162,9 @@ main,
   margin: 0 auto 1.5rem;
   max-width: 44rem;
 }
+.past-event main {
+  margin-bottom: 3rem;
+}
 h1,
 h2,
 h3,
@@ -165,7 +183,8 @@ h4 + .sub-head {
 }
 article p,
 article ol,
-article ul {
+article ul,
+section p {
   margin: 0 0 1.5rem;
 }
 .branded-events {
@@ -291,11 +310,11 @@ body {
   line-height: 1.5;
 }
 .site-header {
-  border-bottom: 3px solid #000; /* brand color */
+  border-bottom: 3px solid #000; /* hex brand color */
   border-color: var(--brand-color);
 }
 .branding-logo {
-  fill: #000; /* brand color */
+  fill: #000; /* hex brand color */
   fill: var(--brand-color);
 }
 .masthead,
@@ -312,11 +331,11 @@ body {
   text-decoration: none;
 }
 .icon {
-  fill: #000; /* brand color */
+  fill: #000; /* hex brand color */
   fill: var(--brand-color);
 }
 .upcoming-event {
-  background-color: #000; /* brand color */
+  background-color: #000; /* hex brand color */
   background-color: var(--brand-color);
   color: #fff;
   color: var(--inverse-text-color);
@@ -340,7 +359,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000; /* brand color */
+  color: #000; /* hex brand color */
   color: var(--brand-color);
   font-family: "League Spartan", sans-serif;
   font-family: var(--heading-font-stack);
@@ -372,7 +391,7 @@ strong {
   border-radius: 50%;
 }
 .site-footer {
-  border-top: 1px solid #000; /* brand color */
+  border-top: 1px solid #000; /* hex brand color */
   border-color: var(--brand-color);
 }
 
@@ -382,7 +401,7 @@ strong {
 a {
   color: #025b9f;
   color: var(--link-color);
-  text-decoration-color: #000; /* brand color */
+  text-decoration-color: rgb(179 10 46);
   text-decoration-color: var(--brand-color);
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.15rem;
@@ -425,8 +444,25 @@ a:focus-visible,
   left: 0.75rem;
   outline-offset: 0;
 }
+.attention a {
+  color: #fff;
+  color: var(--inverse-text-color);
+  text-decoration-color: rgb(255 255 255);
+  text-decoration-color: var(--inverse-text-color);
+}
+.attention a:focus {
+  outline-color: #fff;
+  outline-color: var(--light-accent);
+}
+.attention a:focus:not(:focus-visible) {
+  outline: none;
+}
+.attention a:focus-visible {
+  outline: max(2px, 0.175rem) solid #fff;
+  outline-color: var(--light-accent);
+}
 .featured-link {
-  background-color: #000; /* brand color */
+  background-color: #000; /* hex brand color */
   background-color: var(--brand-color);
   border-radius: 1.38em;
   color: #222;
@@ -446,7 +482,7 @@ a:focus-visible,
 .featured-link.inverse {
   background-color: #fff;
   background-color: var(--background-color);
-  color: #000; /* brand color */
+  color: #000; /* hex brand color */
   color: var(--brand-color);
 }
 .featured-link.meetup,
@@ -460,19 +496,19 @@ a:focus-visible,
   color: var(--inverse-text-color);
 }
 .featured-link.meetup {
-  background-color: rgb(179 10 46);
+  background-color: #b30a2e;
   background-color: var(--meetup-brand-color);
 }
 .featured-link.gaming {
-  background-color: rgb(212 61 38);
+  background-color: #d43d27;
   background-color: var(--gaming-brand-color);
 }
 .featured-link.camp {
-  background-color: rgb(7 104 0);
+  background-color: #076800;
   background-color: var(--camp-brand-color);
 }
 .featured-link.conf {
-  background-color: rgb(2 91 159);
+  background-color: #025b9f;
   background-color: var(--conf-brand-color);
 }
 .main-nav-menu a[aria-current] {
