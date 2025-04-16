@@ -398,6 +398,12 @@ strong {
 .team img {
   border-radius: 50%;
 }
+.sponsors {
+  text-align: center;
+}
+.logo {
+  margin: 1rem;
+}
 .site-footer {
   border-top: 1px solid #000; /* hex brand color */
   border-color: var(--brand-color);
