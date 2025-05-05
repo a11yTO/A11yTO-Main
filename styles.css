@@ -254,11 +254,8 @@ img.watching {
     grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
     grid-gap: 1.5rem;
   }
-  .team li {
-    margin: 0;
-  }
   .team img {
-    max-width: 11rem;
+    max-width: 10rem;
   }
   @media (min-width: 44.2rem) {
     img.watching {
