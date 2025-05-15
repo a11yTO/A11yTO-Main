@@ -486,7 +486,7 @@ body {
 }
 .conf .branding-logo {
   fill: #000000; /* fallback color */
-  fill: var(--brand-color);
+  fill: var(--conf-brand-color);
 }
 .camp .branding-logo {
   fill: #000000; /* fallback color */
@@ -514,15 +514,15 @@ body {
 }
 .camp .icon {
   fill: #000000; /* fallback color */
-  fill: var(--brand-color);
+  fill: var(--camp-brand-color);
 }
 .meetup .icon {
   fill: #000000; /* fallback color */
-  fill: var(--brand-color);
+  fill: var(--meetup-brand-color);
 }
 .gaming .icon {
   fill: #000000; /* fallback color */
-  fill: var(--brand-color);
+  fill: var(--gaming-brand-color);
 }
 .upcoming-event {
   color: #fff;
