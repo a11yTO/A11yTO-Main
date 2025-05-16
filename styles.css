@@ -82,9 +82,6 @@ strong {
   }
 }
 .attention {
-  background-color: #000;
-  color: #fff;
-  color: var(--inverse-text-color);
   font-size: 1rem;
   margin: 0;
   padding: 0.5rem 5% 0.75rem;
@@ -460,6 +457,11 @@ body {
   background-color: #fff;
   background-color: var(--background-color);
 }
+.attention {
+  background-color: #000;
+  color: #fff;
+  color: var(--inverse-text-color);
+}
 .main .site-header {
   border-bottom: 3px solid #000000; /* fallback color */
   border-color: var(--main-brand-color);
@@ -643,7 +645,7 @@ a[aria-current] {
   color: #222222;
   color: var(--text-color);
 }
-.inverse {
+a.inverse {
   color: #fff;
   color: var(--inverse-text-color);
   text-decoration-color: #fff;
