@@ -463,43 +463,43 @@ body {
   color: var(--inverse-text-color);
 }
 .main .site-header {
-  border-bottom: 3px solid #000000; /* fallback color */
+  border-bottom: 3px solid #000000; /* main baseline colour */
   border-color: var(--main-brand-color);
 }
 .conf .site-header {
-  border-bottom: 3px solid #000000; /* fallback color */
+  border-bottom: 3px solid #025b9f; /* conf baseline colour */
   border-color: var(--conf-brand-color);
 }
 .camp .site-header {
-  border-bottom: 3px solid #000000; /* fallback color */
+  border-bottom: 3px solid #025b9f; /* camp baseline colour */
   border-color: var(--camp-brand-color);
 }
 .meetup .site-header {
-  border-bottom: 3px solid #000000; /* fallback color */
+  border-bottom: 3px solid #b30a2e; /* meetup baseline colour */
   border-color: var(--meetup-brand-color);
 }
 .gaming .site-header {
-  border-bottom: 3px solid #000000; /* fallback color */
+  border-bottom: 3px solid #d43d27; /* gaming baseline colour */
   border-color: var(--gaming-brand-color);
 }
 .main .branding-logo {
-  fill: #000000; /* fallback color */
+  fill: #000000; /* main baseline colour */
   fill: var(--main-brand-color);
 }
 .conf .branding-logo {
-  fill: #000000; /* fallback color */
+  fill: #025b9f; /* conf baseline colour */
   fill: var(--conf-brand-color);
 }
 .camp .branding-logo {
-  fill: #000000; /* fallback color */
+  fill: #025b9f; /* camp baseline colour */
   fill: var(--camp-brand-color);
 }
 .meetup .branding-logo {
-  fill: #000000; /* fallback color */
+  fill: #b30a2e; /* meetup baseline colour */
   fill: var(--meetup-brand-color);
 }
 .gaming .branding-logo {
-  fill: #000000; /* fallback color */
+  fill: #d43d27; /* gaming baseline colour */
   fill: var(--gaming-brand-color);
 }
 .main-nav-menu a {
@@ -507,23 +507,23 @@ body {
   color: var(--text-color);
 }
 .main .icon {
-  fill: #000000; /* fallback color */
+  fill: #000000; /* main baseline colour */
   fill: var(--main-brand-color);
 }
 .conf .icon {
-  fill: #000000; /* fallback color */
+  fill: #025b9f; /* conf baseline colour */
   fill: var(--conf-brand-color);
 }
 .camp .icon {
-  fill: #000000; /* fallback color */
+  fill: #025b9f; /* camp baseline colour */
   fill: var(--camp-brand-color);
 }
 .meetup .icon {
-  fill: #000000; /* fallback color */
+  fill: #b30a2e; /* meetup baseline colour */
   fill: var(--meetup-brand-color);
 }
 .gaming .icon {
-  fill: #000000; /* fallback color */
+  fill: #d43d27; /* gaming baseline colour */
   fill: var(--gaming-brand-color);
 }
 .upcoming-event {
@@ -531,23 +531,23 @@ body {
   color: var(--inverse-text-color);
 }
 .main .upcoming-event {
-  background-color: #000000; /* fallback color */
+  background-color: #000000; /* main baseline colour */
   background-color: var(--main-brand-color);
 }
 .conf .upcoming-event {
-  background-color: #000000; /* fallback color */
+  background-color: #025b9f; /* conf baseline colour */
   background-color: var(--conf-brand-color);
 }
 .camp .upcoming-event {
-  background-color: #000000; /* fallback color */
+  background-color: #025b9f; /* camp baseline colour */
   background-color: var(--camp-brand-color);
 }
 .meetup .upcoming-event {
-  background-color: #000000; /* fallback color */
+  background-color: #b30a2e; /* meetup baseline colour */
   background-color: var(--meetup-brand-color);
 }
 .gaming .upcoming-event {
-  background-color: #000000; /* fallback color */
+  background-color: #d43d27; /* gaming baseline colour */
   background-color: var(--gaming-brand-color);
 }
 .upcoming-event .event-title {
@@ -555,66 +555,67 @@ body {
   color: var(--inverse-text-color);
 }
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
-  color: #000000; /* fallback color */
+  color: #000000; /* main baseline colour */
   color: var(--main-brand-color);
 }
 .conf h1, .conf h2, .conf h3, .conf h4, .conf h5, .conf h6 {
-  color: #000000; /* fallback color */
+  color: #025b9f; /* conf baseline colour */
   color: var(--conf-brand-color);
 }
 .camp h1, .camp h2, .camp h3, .camp h4, .camp h5, .camp h6 {
-  color: #000000; /* fallback color */
+  color: #025b9f; /* camp baseline colour */
   color: var(--camp-brand-color);
 }
 .meetup h1, .meetup h2, .meetup h3, .meetup h4, .meetup h5, .meetup h6 {
-  color: #000000; /* fallback color */
+  color: #b30a2e; /* meetup baseline colour */
   color: var(--meetup-brand-color);
 }
 .gaming h1, .gaming h2, .gaming h3, .gaming h4, .gaming h5, .gaming h6 {
-  color: #000000; /* fallback color */
+  color: #d43d27; /* gaming baseline colour */
   color: var(--gaming-brand-color);
 }
 .main .site-footer {
-  border-top: 1px solid #000000; /* fallback color */
+  border-top: 1px solid #000000; /* main baseline colour */
   border-color: var(--main-brand-color);
 }
 .conf .site-footer {
-  border-top: 1px solid #000000; /* fallback color */
+  border-top: 1px solid #025b9f; /* conf baseline colour */
   border-color: var(--conf-brand-color);
 }
 .camp .site-footer {
-  border-top: 1px solid #000000; /* fallback color */
+  border-top: 1px solid #025b9f; /* camp baseline colour */
   border-color: var(--camp-brand-color);
 }
 .meetup .site-footer {
-  border-top: 1px solid #000000; /* fallback color */
+  border-top: 1px solid #b30a2e; /* meetup baseline colour */
   border-color: var(--meetup-brand-color);
 }
 .gaming .site-footer {
-  border-top: 1px solid #000000; /* fallback color */
+  border-top: 1px solid #d43d27; /* gaming baseline colour */
   border-color: var(--gaming-brand-color);
-}a {
+}
+a {
   color: #025b9f;
   color: var(--link-color);
 }
 .main a {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #000000; /* main baseline colour */
   text-decoration-color: var(--main-brand-color);
 }
 .conf a {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #025b9f; /* conf baseline colour */
   text-decoration-color: var(--conf-brand-color);
 }
 .camp a {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #025b9f; /* camp baseline colour */
   text-decoration-color: var(--camp-brand-color);
 }
 .meetup a {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #b30a2e; /* meetup baseline colour */
   text-decoration-color: var(--meetup-brand-color);
 }
 .gaming a {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #d43d27; /* gaming baseline colour */
   text-decoration-color: var(--gaming-brand-color);
 }
 a[aria-current] {
@@ -622,23 +623,23 @@ a[aria-current] {
   color: var(--link-color);
 }
 .main a[aria-current] {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #000000; /* main baseline colour */
   text-decoration-color: var(--main-brand-color);
 }
 .conf a[aria-current] {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #025b9f; /* conf baseline colour */
   text-decoration-color: var(--conf-brand-color);
 }
 .camp a[aria-current] {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #025b9f; /* camp baseline colour */
   text-decoration-color: var(--camp-brand-color);
 }
 .meetup a[aria-current] {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #b30a2e; /* meetup baseline colour */
   text-decoration-color: var(--meetup-brand-color);
 }
 .gaming a[aria-current] {
-  text-decoration-color: #000000; /* fallback color */
+  text-decoration-color: #d43d27; /* gaming baseline colour */
   text-decoration-color: var(--gaming-brand-color);
 }
 .colophon a[aria-current] {
@@ -656,43 +657,43 @@ a.inverse {
   color: var(--light-accent);
 }
 .main .featured-link {
-  background-color: #000000; /* fallback color */
+  background-color: #000000; /* main baseline colour */
   background-color: var(--main-brand-color);
 }
 .conf .featured-link {
-  background-color: #000000; /* fallback color */
+  background-color: #025b9f; /* conf baseline colour */
   background-color: var(--conf-brand-color);
 }
 .camp .featured-link {
-  background-color: #000000; /* fallback color */
+  background-color: #025b9f; /* camp baseline colour */
   background-color: var(--camp-brand-color);
 }
 .meetup .featured-link {
-  background-color: #000000; /* fallback color */
+  background-color: #b30a2e; /* meetup baseline colour */
   background-color: var(--meetup-brand-color);
 }
 .gaming .featured-link {
-  background-color: #000000; /* fallback color */
+  background-color: #d43d27; /* gaming baseline colour */
   background-color: var(--gaming-brand-color);
 }
 .main .featured-link {
-  color: #000000; /* fallback color */
+  color: #000000; /* main baseline colour */
   color: var(--main-brand-color);
 }
 .conf .featured-link {
-  color: #000000; /* fallback color */
+  color: #025b9f; /* conf baseline colour */
   color: var(--conf-brand-color);
 }
 .camp .featured-link {
-  color: #000000; /* fallback color */
+  color: #025b9f; /* camp baseline colour */
   color: var(--camp-brand-color);
 }
 .meetup .featured-link {
-  color: #000000; /* fallback color */
+  color: #b30a2e; /* meetup baseline colour */
   color: var(--meetup-brand-color);
 }
 .gaming .featured-link {
-  color: #000000; /* fallback color */
+  color: #d43d27; /* gaming baseline colour */
   color: var(--gaming-brand-color);
 }
 .featured-link.inverse {
