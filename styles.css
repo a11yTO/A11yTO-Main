@@ -88,6 +88,9 @@ strong {
   text-align: center;
   width: 100%;
 }
+.site-header {
+  border-bottom: 0.2rem solid;
+}
 .masthead {
   padding: 1.5rem 5% 0.5rem;
 }
@@ -316,6 +319,9 @@ ul.schedule {
   margin: 1.5rem;
   width: auto;
 }
+.site-footer {
+  border-top: 0.1rem solid;
+}
 .colophon {
   padding: 1.5rem 5%;
 }
@@ -423,7 +429,7 @@ a {
 a[aria-current] {
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.2rem;
 }
 .colophon a[aria-current] {
@@ -466,23 +472,23 @@ body {
   color: var(--inverse-text-color);
 }
 .main .site-header {
-  border-bottom: 3px solid #000000; /* main baseline colour */
+  border-color: #000000; /* main baseline colour */
   border-color: var(--main-brand-color);
 }
 .conf .site-header {
-  border-bottom: 3px solid #025b9f; /* conf baseline colour */
+  border-color: #025b9f; /* conf baseline colour */
   border-color: var(--conf-brand-color);
 }
 .camp .site-header {
-  border-bottom: 3px solid #025b9f; /* camp baseline colour */
+  border-color: #025b9f; /* camp baseline colour */
   border-color: var(--camp-brand-color);
 }
 .meetup .site-header {
-  border-bottom: 3px solid #b30a2e; /* meetup baseline colour */
+  border-color: #b30a2e; /* meetup baseline colour */
   border-color: var(--meetup-brand-color);
 }
 .gaming .site-header {
-  border-bottom: 3px solid #d43d27; /* gaming baseline colour */
+  border-color: #d43d27; /* gaming baseline colour */
   border-color: var(--gaming-brand-color);
 }
 .main .branding-logo {
@@ -578,23 +584,23 @@ body {
   color: var(--gaming-brand-color);
 }
 .main .site-footer {
-  border-top: 1px solid #000000; /* main baseline colour */
+  border-color: #000000; /* main baseline colour */
   border-color: var(--main-brand-color);
 }
 .conf .site-footer {
-  border-top: 1px solid #025b9f; /* conf baseline colour */
+  border-color: #025b9f; /* conf baseline colour */
   border-color: var(--conf-brand-color);
 }
 .camp .site-footer {
-  border-top: 1px solid #025b9f; /* camp baseline colour */
+  border-color: #025b9f; /* camp baseline colour */
   border-color: var(--camp-brand-color);
 }
 .meetup .site-footer {
-  border-top: 1px solid #b30a2e; /* meetup baseline colour */
+  border-color: #b30a2e; /* meetup baseline colour */
   border-color: var(--meetup-brand-color);
 }
 .gaming .site-footer {
-  border-top: 1px solid #d43d27; /* gaming baseline colour */
+  border-color: #d43d27; /* gaming baseline colour */
   border-color: var(--gaming-brand-color);
 }
 a {
