@@ -326,14 +326,25 @@ ul.schedule {
   padding: 1.5rem 5%;
 }
 .colophon ul {
+  margin: 0;
   padding: 0;
 }
 .colophon li {
-  display: inline;
-  margin: 0 0.5rem;
+  list-style-type: "";
 }
 .colophon a {
   display: inline-block;
+}
+@supports (display: flex) {
+  .colophon ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1.5rem;
+  }
+  .colophon li {
+    margin: 0;
+  }
 }
 
 /* -------------------------------------------------------------------------
