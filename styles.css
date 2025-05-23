@@ -131,13 +131,35 @@ strong {
   display: inline-block;
 }
 .social-icons li {
-  margin: 0 0.65rem;
+  margin: 0 0.35rem;
+}
+.social-icons a {
+  padding: 0 0.5rem;
 }
 .icon {
   width: 1.75rem;
 }
 @supports (flex-wrap: wrap) {
-  @media (min-width: 62rem) {
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-block-start: 0.3rem;
+  }
+  .social-icons li {
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 50rem) {
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+  }
+  @media (min-width: 70rem) {
     .site-header {
       padding-block-start: 0;
     }
@@ -153,20 +175,7 @@ strong {
       margin: 0;
     }
     .nav-list {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      justify-content: center;
-      padding: 1rem 0;
-    }
-    .nav-list li {
       padding: 0;
-    }
-    .social-icons {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      padding-block-start: 0.3rem;
     }
   }
 }
@@ -222,7 +231,7 @@ h4 + .sub-head {
   margin-top: 1.5rem;
 }
 .address {
-  list-style: none;
+  list-style-type: "";
   margin: 0 0 1.5rem;
   padding: 0;
 }
@@ -383,7 +392,7 @@ body {
   text-wrap: pretty;
 }
 .event-specifics {
-  list-style: none;
+  list-style-type: "";
 }
 h1,
 h2,
