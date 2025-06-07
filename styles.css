@@ -1,12 +1,12 @@
 ﻿:root {
-  --dark: rgb(34 34 34); /* #222222 */
-  --light: rgb(255 255 255); /* #ffffff */
+  --dark: oklch(25.196% 0 none); /* #222222 */
+  --light: oklch(100% 0 none); /* #ffffff */
 
-  --main-brand-color: rgb(0 0 0); /* #000000 */
-  --conf-brand-color: rgb(2 91 159); /* #025b9f */
-  --camp-brand-color: rgb(7 104 0); /* #076800 */
-  --meetup-brand-color: rgb(179 10 46); /* #b30a2e */
-  --gaming-brand-color: rgb(212 61 38); /* #d43d27 */
+  --main-brand-color: oklch(0% 0 none); /* #000000 */
+  --conf-brand-color: oklch(46.448% 0.13143 250.27); /* #025b9f */
+  --camp-brand-color: oklch(44.913% 0.15124 142.04); /* #076800 */
+  --meetup-brand-color: oklch(48.818% 0.19165 20.152); /* #b30a2e */
+  --gaming-brand-color: oklch(58.13% 0.19134 31.365); /* #d43d27 */
 
   --text-color: var(--dark);
   --inverse-text-color: var(--light);
@@ -14,7 +14,7 @@
   --inverse-background-color: var(--dark);
   --light-accent: var(--light);
   --dark-accent: var(--dark);
-  --link-color: rgb(2 91 159); /* #025b9f */
+  --link-color: oklch(46.448% 0.13143 250.27); /* #025b9f */
   --secondary-background: #edf5f8;
 
   --base-font-size: 112.5%;
