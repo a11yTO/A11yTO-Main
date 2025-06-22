@@ -7,6 +7,7 @@
   --camp-brand-color: oklch(44.913% 0.15124 142.04); /* #076800 */
   --meetup-brand-color: oklch(48.818% 0.19165 20.152); /* #b30a2e */
   --gaming-brand-color: oklch(58.13% 0.19134 31.365); /* #d43d27 */
+  --irl-brand-color: oklch(42.186% 0.13876 318.43); /* #6c2e7d */
 
   --text-color: var(--dark);
   --inverse-text-color: var(--light);
@@ -516,6 +517,10 @@ body {
   border-color: #d43d27; /* gaming baseline colour */
   border-color: var(--gaming-brand-color);
 }
+.irl .site-header {
+  border-color: #6c2e7d; /* irl baseline colour */
+  border-color: var(--irl-brand-color);
+}
 .main .branding-logo {
   fill: #000000; /* main baseline colour */
   fill: var(--main-brand-color);
@@ -535,6 +540,10 @@ body {
 .gaming .branding-logo {
   fill: #d43d27; /* gaming baseline colour */
   fill: var(--gaming-brand-color);
+}
+.irl .branding-logo {
+  fill: #6c2e7d; /* irl baseline colour */
+  fill: var(--irl-brand-color);
 }
 .main-nav-menu a {
   color: #222222;
@@ -560,6 +569,10 @@ body {
   fill: #d43d27; /* gaming baseline colour */
   fill: var(--gaming-brand-color);
 }
+.irl .icon {
+  fill: #6c2e7d; /* irl baseline colour */
+  fill: var(--irl-brand-color);
+}
 .upcoming-event {
   color: #fff;
   color: var(--inverse-text-color);
@@ -580,9 +593,9 @@ body {
   background-color: #b30a2e; /* meetup baseline colour */
   background-color: var(--meetup-brand-color);
 }
-.gaming .upcoming-event {
-  background-color: #d43d27; /* gaming baseline colour */
-  background-color: var(--gaming-brand-color);
+.irl .upcoming-event {
+  background-color: #6c2e7d; /* irl baseline colour */
+  background-color: var(--irl-brand-color);
 }
 .upcoming-event .event-title {
   color: #fff;
@@ -608,6 +621,10 @@ body {
   color: #d43d27; /* gaming baseline colour */
   color: var(--gaming-brand-color);
 }
+.irl h1, .irl h2, .irl h3, .irl h4, .irl h5, .irl h6 {
+  color: #6c2e7d; /* irl baseline colour */
+  color: var(--irl-brand-color);
+}
 .main .site-footer {
   border-color: #000000; /* main baseline colour */
   border-color: var(--main-brand-color);
@@ -627,6 +644,10 @@ body {
 .gaming .site-footer {
   border-color: #d43d27; /* gaming baseline colour */
   border-color: var(--gaming-brand-color);
+}
+.irl .site-footer {
+  border-color: #6c2e7d; /* irl baseline colour */
+  border-color: var(--irl-brand-color);
 }
 a {
   color: #025b9f;
@@ -652,6 +673,10 @@ a {
   text-decoration-color: #d43d27; /* gaming baseline colour */
   text-decoration-color: var(--gaming-brand-color);
 }
+.irl a {
+  text-decoration-color: #6c2e7d; /* irl baseline colour */
+  text-decoration-color: var(--irl-brand-color);
+}
 a[aria-current] {
   color: #025b9f;
   color: var(--link-color);
@@ -675,6 +700,10 @@ a[aria-current] {
 .gaming a[aria-current] {
   text-decoration-color: #d43d27; /* gaming baseline colour */
   text-decoration-color: var(--gaming-brand-color);
+}
+.irl a[aria-current] {
+  text-decoration-color: #6c2e7d; /* irl baseline colour */
+  text-decoration-color: var(--irl-brand-color);
 }
 .colophon a[aria-current] {
   color: #222222;
@@ -710,6 +739,10 @@ a.inverse {
   background-color: #d43d27; /* gaming baseline colour */
   background-color: var(--gaming-brand-color);
 }
+.irl .featured-link {
+  background-color: #6c2e7d; /* irl baseline colour */
+  background-color: var(--irl-brand-color);
+}
 .main .featured-link {
   color: #000000; /* main baseline colour */
   color: var(--main-brand-color);
@@ -730,6 +763,10 @@ a.inverse {
   color: #d43d27; /* gaming baseline colour */
   color: var(--gaming-brand-color);
 }
+.irl .featured-link {
+  color: #6c2e7d; /* irl baseline colour */
+  color: var(--irl-brand-color);
+}
 .featured-link.inverse {
   background-color: #fff;
   background-color: var(--light-accent);
@@ -737,7 +774,8 @@ a.inverse {
 .featured-link.meetup,
 .featured-link.gaming,
 .featured-link.camp,
-.featured-link.conf {
+.featured-link.conf,
+.featured-link.irl {
   color: #fff;
   color: var(--inverse-text-color);
 }
@@ -756,6 +794,10 @@ a.inverse {
 .featured-link.conf {
   background-color: #025b9f;
   background-color: var(--conf-brand-color);
+}
+.featured-link.irl {
+  background-color: #025b9f;
+  background-color: var(--irl-brand-color);
 }
 .join-us .featured-link,
 .get-tickets .featured-link,
