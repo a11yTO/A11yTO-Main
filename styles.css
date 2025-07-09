@@ -355,7 +355,8 @@ ul.schedule {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.25rem 1.5rem;
+    gap: 0 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .colophon li {
     margin: 0;
