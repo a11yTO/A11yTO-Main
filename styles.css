@@ -598,6 +598,10 @@ body {
   background-color: #6c2e7d; /* irl baseline colour */
   background-color: var(--irl-brand-color);
 }
+.gaming .upcoming-event {
+  background-color: #d43d27; /* gaming baseline colour */
+  background-color: var(--gaming-brand-color);
+}
 .upcoming-event .event-title {
   color: #fff;
   color: var(--inverse-text-color);
