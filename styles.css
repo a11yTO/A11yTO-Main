@@ -424,7 +424,7 @@ h6 {
 .speaker-image {
   display: block;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   width: 12rem;
 }
 .sub-head {
