@@ -284,7 +284,7 @@ img.watching {
     grid-gap: 1.5rem;
   }
   .team img {
-    max-width: 10rem;
+    max-width: 12rem;
   }
   @media (min-width: 44.2rem) {
     img.watching {
