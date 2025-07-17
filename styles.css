@@ -3,11 +3,17 @@
   --light: oklch(100% 0 none); /* #ffffff */
 
   --main-brand-color: oklch(0% 0 none); /* #000000 */
+  --main-brand-color-50: oklch(from var(--main-brand-color) l c h / calc(alpha - 0.5)); /* 50% lighter */
   --conf-brand-color: oklch(46.448% 0.13143 250.27); /* #025b9f */
+  --conf-brand-color-50: oklch(from var(--conf-brand-color) l c h / calc(alpha - 0.5)); /* 50% lighter */
   --camp-brand-color: oklch(44.913% 0.15124 142.04); /* #076800 */
+  --camp-brand-color-50: oklch(from var(--camp-brand-color) l c h / calc(alpha - 0.5)); /* 50% lighter */
   --meetup-brand-color: oklch(48.818% 0.19165 20.152); /* #b30a2e */
+  --meetup-brand-color-50: oklch(from var(--meetup-brand-color) l c h / calc(alpha - 0.5)); /* 50% lighter */
   --gaming-brand-color: oklch(58.13% 0.19134 31.365); /* #d43d27 */
+  --gaming-brand-color-50: oklch(from var(--gaming-brand-color) l c h / calc(alpha - 0.5)); /* 50% lighter */
   --irl-brand-color: oklch(42.186% 0.13876 318.43); /* #6c2e7d */
+  --irl-brand-color-50: oklch(from var(--irl-brand-color) l c h / calc(alpha - 0.5)); /* 50% lighter */
 
   --text-color: var(--dark);
   --inverse-text-color: var(--light);
@@ -777,32 +783,32 @@ a.inverse {
 .main .speaker-image,
 .main .organizer-image {
   border-color: #000000;
-  border-color: var(--main-brand-color);
+  border-color: var(--main-brand-color-50);
 }
 .conf .speaker-image,
 .conf .organizer-image {
   border-color: #025b9f;
-  border-color: var(--conf-brand-color);
+  border-color: var(--conf-brand-color-50);
 }
 .camp .speaker-image,
 .camp .organizer-image {
   border-color: #076800; /* camp baseline colour */
-  border-color: var(--camp-brand-color);
+  border-color: var(--camp-brand-color-50);
 }
 .meetup .speaker-image,
 .meetup .organizer-image {
   border-color: #b30a2e; /* meetup baseline colour */
-  border-color: var(--meetup-brand-color);
+  border-color: var(--meetup-brand-color-50);
 }
 .gaming .speaker-image,
 .gaming .organizer-image {
   border-color: #d43d27; /* gaming baseline colour */
-  border-color: var(--gaming-brand-color);
+  border-color: var(--gaming-brand-color-50);
 }
 .irl .speaker-image,
 .irl .organizer-image {
   border-color: #6c2e7d; /* irl baseline colour */
-  border-color: var(--irl-brand-color);
+  border-color: var(--irl-brand-color-50);
 }
 .featured-link.inverse {
   background-color: #fff;
