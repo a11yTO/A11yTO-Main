@@ -782,32 +782,32 @@ a.inverse {
 }
 .main .speaker-image,
 .main .organizer-image {
-  border-color: #000000;
+  border-color: #7F7F7F; /* camp baseline -50% colour */
   border-color: var(--main-brand-color-50);
 }
 .conf .speaker-image,
 .conf .organizer-image {
-  border-color: #025b9f;
+  border-color: #80ADCF; /* camp baseline -50% colour */
   border-color: var(--conf-brand-color-50);
 }
 .camp .speaker-image,
 .camp .organizer-image {
-  border-color: #076800; /* camp baseline colour */
+  border-color: #83B37F; /* camp baseline -50% colour */
   border-color: var(--camp-brand-color-50);
 }
 .meetup .speaker-image,
 .meetup .organizer-image {
-  border-color: #b30a2e; /* meetup baseline colour */
+  border-color: #D98496; /* camp baseline -50% colour */
   border-color: var(--meetup-brand-color-50);
 }
 .gaming .speaker-image,
 .gaming .organizer-image {
-  border-color: #d43d27; /* gaming baseline colour */
+  border-color: #E99E93; /* camp baseline -50% colour */
   border-color: var(--gaming-brand-color-50);
 }
 .irl .speaker-image,
 .irl .organizer-image {
-  border-color: #6c2e7d; /* irl baseline colour */
+  border-color: #B596BE; /* camp baseline -50% colour */
   border-color: var(--irl-brand-color-50);
 }
 .featured-link.inverse {
