@@ -530,57 +530,39 @@ body {
   border-color: #6c2e7d; /* irl baseline hex colour */
   border-color: var(--irl-brand-color);
 }
-.main .branding-logo {
+.main .branding-logo,
+.main .icon {
   fill: #000000; /* main baseline hex colour */
   fill: var(--main-brand-color);
 }
-.conf .branding-logo {
+.conf .branding-logo,
+.conf .icon {
   fill: #025b9f; /* conf baseline hex colour */
   fill: var(--conf-brand-color);
 }
-.camp .branding-logo {
+.camp .branding-logo,
+.camp .icon {
   fill: #025b9f; /* camp baseline hex colour */
   fill: var(--camp-brand-color);
 }
-.meetup .branding-logo {
+.meetup .branding-logo,
+.meetup .icon {
   fill: #b30a2e; /* meetup baseline hex colour */
   fill: var(--meetup-brand-color);
 }
-.gaming .branding-logo {
+.gaming .branding-logo,
+.gaming .icon {
   fill: #d43d27; /* gaming baseline hex colour */
   fill: var(--gaming-brand-color);
 }
-.irl .branding-logo {
+.irl .branding-logo,
+.irl .icon {
   fill: #6c2e7d; /* irl baseline hex colour */
   fill: var(--irl-brand-color);
 }
 .main-nav-menu a {
   color: #222222;
   color: var(--text-color);
-}
-.main .icon {
-  fill: #000000; /* main baseline hex colour */
-  fill: var(--main-brand-color);
-}
-.conf .icon {
-  fill: #025b9f; /* conf baseline hex colour */
-  fill: var(--conf-brand-color);
-}
-.camp .icon {
-  fill: #025b9f; /* camp baseline hex colour */
-  fill: var(--camp-brand-color);
-}
-.meetup .icon {
-  fill: #b30a2e; /* meetup baseline hex colour */
-  fill: var(--meetup-brand-color);
-}
-.gaming .icon {
-  fill: #d43d27; /* gaming baseline hex colour */
-  fill: var(--gaming-brand-color);
-}
-.irl .icon {
-  fill: #6c2e7d; /* irl baseline hex colour */
-  fill: var(--irl-brand-color);
 }
 .upcoming-event {
   color: #fff;
