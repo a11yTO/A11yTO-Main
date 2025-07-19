@@ -647,58 +647,42 @@ body {
 a {
   color: #025b9f;
   color: var(--link-color);
+  text-decoration-color: #80ADCF; /* link baseline -50% hex colour */
+  text-decoration-color: var(--conf-brand-color-50);
 }
-.main a {
-  text-decoration-color: #000000; /* main baseline hex colour */
-  text-decoration-color: var(--main-brand-color);
+.main a,
+.main a[aria-current] {
+  text-decoration-color: #7F7F7F; /* main baseline -50% hex colour */
+  text-decoration-color: var(--main-brand-color-50);
 }
-.conf a {
-  text-decoration-color: #025b9f; /* conf baseline hex colour */
-  text-decoration-color: var(--conf-brand-color);
+.conf a
+.conf a[aria-current] {
+  text-decoration-color: #80ADCF; /* conf baseline -50% hex colour */
+  text-decoration-color: var(--conf-brand-color-50);
 }
-.camp a {
-  text-decoration-color: #025b9f; /* camp baseline hex colour */
-  text-decoration-color: var(--camp-brand-color);
+.camp a,
+.camp a[aria-current] {
+  text-decoration-color: #83B37F; /* camp baseline -50% hex colour */
+  text-decoration-color: var(--camp-brand-color-50);
 }
-.meetup a {
-  text-decoration-color: #b30a2e; /* meetup baseline hex colour */
-  text-decoration-color: var(--meetup-brand-color);
+.meetup a,
+.meetup a[aria-current] {
+  text-decoration-color: #D98496; /* meetup baseline -50% hex colour */
+  text-decoration-color: var(--meetup-brand-color-50);
 }
-.gaming a {
-  text-decoration-color: #d43d27; /* gaming baseline hex colour */
-  text-decoration-color: var(--gaming-brand-color);
+.gaming a,
+.gaming a[aria-current] {
+  text-decoration-color: #E99E93; /* gaming baseline -50% hex colour */
+  text-decoration-color: var(--gaming-brand-color-50);
 }
-.irl a {
-  text-decoration-color: #6c2e7d; /* irl baseline hex colour */
-  text-decoration-color: var(--irl-brand-color);
+.irl a,
+.irl a[aria-current] {
+  text-decoration-color: #B596BE; /* irl baseline -50% hex colour */
+  text-decoration-color: var(--irl-brand-color-50);
 }
 a[aria-current] {
   color: #025b9f;
   color: var(--link-color);
-}
-.main a[aria-current] {
-  text-decoration-color: #000000; /* main baseline hex colour */
-  text-decoration-color: var(--main-brand-color);
-}
-.conf a[aria-current] {
-  text-decoration-color: #025b9f; /* conf baseline hex colour */
-  text-decoration-color: var(--conf-brand-color);
-}
-.camp a[aria-current] {
-  text-decoration-color: #025b9f; /* camp baseline hex colour */
-  text-decoration-color: var(--camp-brand-color);
-}
-.meetup a[aria-current] {
-  text-decoration-color: #b30a2e; /* meetup baseline hex colour */
-  text-decoration-color: var(--meetup-brand-color);
-}
-.gaming a[aria-current] {
-  text-decoration-color: #d43d27; /* gaming baseline hex colour */
-  text-decoration-color: var(--gaming-brand-color);
-}
-.irl a[aria-current] {
-  text-decoration-color: #6c2e7d; /* irl baseline hex colour */
-  text-decoration-color: var(--irl-brand-color);
 }
 .colophon a[aria-current] {
   color: #222222;
@@ -764,12 +748,12 @@ a.inverse {
 }
 .main .speaker-image,
 .main .organizer-image {
-  border-color: #7F7F7F; /* camp baseline -50% hex colour */
+  border-color: #7F7F7F; /* main baseline -50% hex colour */
   border-color: var(--main-brand-color-50);
 }
 .conf .speaker-image,
 .conf .organizer-image {
-  border-color: #80ADCF; /* camp baseline -50% hex colour */
+  border-color: #80ADCF; /* conf baseline -50% hex colour */
   border-color: var(--conf-brand-color-50);
 }
 .camp .speaker-image,
@@ -779,17 +763,17 @@ a.inverse {
 }
 .meetup .speaker-image,
 .meetup .organizer-image {
-  border-color: #D98496; /* camp baseline -50% hex colour */
+  border-color: #D98496; /* meetup baseline -50% hex colour */
   border-color: var(--meetup-brand-color-50);
 }
 .gaming .speaker-image,
 .gaming .organizer-image {
-  border-color: #E99E93; /* camp baseline -50% hex colour */
+  border-color: #E99E93; /* gaming baseline -50% hex colour */
   border-color: var(--gaming-brand-color-50);
 }
 .irl .speaker-image,
 .irl .organizer-image {
-  border-color: #B596BE; /* camp baseline -50% hex colour */
+  border-color: #B596BE; /* irl baseline -50% hex colour */
   border-color: var(--irl-brand-color-50);
 }
 .featured-link.inverse {
