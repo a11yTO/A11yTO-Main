@@ -513,6 +513,12 @@ a {
   color: #fff; /* baseline hex colour */
   color: var(--inverse-text-color);
 }
+.site-header .attention .inverse {
+  color: #fff; /* baseline hex colour */
+  color: var(--inverse-text-color);
+  text-decoration-color: #fff; /* baseline hex colour */
+  text-decoration-color: var(--inverse-text-color);
+}
 .site-header,
 .site-footer {
   border-color: #000; /* baseline hex colour */
