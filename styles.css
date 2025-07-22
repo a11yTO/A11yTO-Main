@@ -557,6 +557,39 @@ a {
   background-color: #fff; /* baseline hex colour */
   background-color: var(--background-color);
 }
+.upcoming-event .featured-link.conf,
+.upcoming-event .featured-link.camp,
+.upcoming-event .featured-link.meetup,
+.upcoming-event .featured-link.gaming,
+.upcoming-event .featured-link.irl {
+  color: #fff; /* baseline hex colour */
+  color: var(--inverse-text-color);
+}
+.featured-link.conf,
+.branded-events .conf {
+  background-color: #025b9f; /* baseline hex colour */
+  background-color: var(--conf-brand-color);
+}
+.featured-link.camp,
+.branded-events .camp {
+  background-color: #076800; /* baseline hex colour */
+  background-color: var(--camp-brand-color);
+}
+.featured-link.meetup,
+.branded-events .meetup {
+  background-color: #b30a2e; /* baseline hex colour */
+  background-color: var(--meetup-brand-color);
+}
+.featured-link.gaming,
+.branded-events .gaming {
+  background-color: #d43d27; /* baseline hex colour */
+  background-color: var(--gaming-brand-color);
+}
+.featured-link.irl,
+.branded-events .irl {
+  background-color: #6c2e7d; /* baseline hex colour */
+  background-color: var(--irl-brand-color);
+}
 .speaker-image,
 .organizer-image {
   border-color: #7F7F7F; /* baseline hex colour */
@@ -570,169 +603,185 @@ h1, h2, h3, h4, h5, h6 {
   color: #222; /* baseline hex colour */
   color: var(--text-color);
 }
-.conf a,
-.conf .main-nav-menu [aria-current] {
-  text-decoration-color: var(--conf-brand-color-50);
+.conf {
+  a,
+  .main-nav-menu [aria-current] {
+    text-decoration-color: var(--conf-brand-color-50)
+  }
+  .site-header,
+  .site-footer {
+    border-color: var(--conf-brand-color);
+  }
+  .branding-logo,
+  .icon {
+    fill: var(--conf-brand-color);
+  }
+  .upcoming-event {
+    background-color: var(--conf-brand-color);
+  }
+  .buy-tickets, 
+  .get-tickets,
+  .join-us {
+    .featured-link {
+        background-color: var(--conf-brand-color);
+    }
+  }
+  .upcoming-event {
+    .featured-link {
+      color: var(--conf-brand-color);
+    }
+  }
+  .speaker-image,
+  .organizer-image {
+    border-color: var(--conf-brand-color-50);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--conf-brand-color);
+  }
 }
-.camp a,
-.camp .main-nav-menu [aria-current] {
-  text-decoration-color: var(--camp-brand-color-50);
+.camp {
+  a,
+  .main-nav-menu [aria-current] {
+    text-decoration-color: var(--camp-brand-color-50)
+  }
+  .site-header,
+  .site-footer {
+    border-color: var(--camp-brand-color);
+  }
+  .branding-logo,
+  .icon {
+    fill: var(--camp-brand-color);
+  }
+  .upcoming-event {
+    background-color: var(--camp-brand-color);
+  }
+  .buy-tickets, 
+  .get-tickets,
+  .join-us {
+    .featured-link {
+        background-color: var(--camp-brand-color);
+    }
+  }
+  .upcoming-event {
+    .featured-link {
+      color: var(--camp-brand-color);
+    }
+  }
+  .speaker-image,
+  .organizer-image {
+    border-color: var(--camp-brand-color-50);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--camp-brand-color);
+  }
 }
-.meetup a,
-.meetup .main-nav-menu [aria-current] {
-  text-decoration-color: var(--meetup-brand-color-50);
+.meetup {
+  a,
+  .main-nav-menu [aria-current] {
+    text-decoration-color: var(--meetup-brand-color-50)
+  }
+  .site-header,
+  .site-footer {
+    border-color: var(--meetup-brand-color);
+  }
+  .branding-logo,
+  .icon {
+    fill: var(--meetup-brand-color);
+  }
+  .upcoming-event {
+    background-color: var(--meetup-brand-color);
+  }
+  .buy-tickets, 
+  .get-tickets,
+  .join-us {
+    .featured-link {
+        background-color: var(--meetup-brand-color);
+    }
+  }
+  .upcoming-event {
+    .featured-link {
+      color: var(--meetup-brand-color);
+    }
+  }
+  .speaker-image,
+  .organizer-image {
+    border-color: var(--meetup-brand-color-50);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--meetup-brand-color);
+  }
 }
-.gaming a,
-.gaming .main-nav-menu [aria-current] {
-  text-decoration-color: var(--gaming-brand-color-50);
+.gaming {
+  a,
+  .main-nav-menu [aria-current] {
+    text-decoration-color: var(--gaming-brand-color-50)
+  }
+  .site-header,
+  .site-footer {
+    border-color: var(--gaming-brand-color);
+  }
+  .branding-logo,
+  .icon {
+    fill: var(--gaming-brand-color);
+  }
+  .upcoming-event {
+    background-color: var(--gaming-brand-color);
+  }
+  .buy-tickets, 
+  .get-tickets,
+  .join-us {
+    .featured-link {
+        background-color: var(--gaming-brand-color);
+    }
+  }
+  .upcoming-event {
+    .featured-link {
+      color: var(--gaming-brand-color);
+    }
+  }
+  .speaker-image,
+  .organizer-image {
+    border-color: var(--gaming-brand-color-50);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--gaming-brand-color);
+  }
 }
-.irl a,
-.irl .main-nav-menu [aria-current] {
-  text-decoration-color: var(--irl-brand-color-50);
-}
-.conf .site-header,
-.conf .site-footer {
-  border-color: var(--conf-brand-color);
-}
-.camp .site-header,
-.camp .site-footer {
-  border-color: var(--camp-brand-color);
-}
-.meetup .site-header,
-.meetup .site-footer {
-  border-color: var(--meetup-brand-color);
-}
-.gaming .site-header,
-.gaming .site-footer {
-  border-color: var(--gaming-brand-color);
-}
-.irl .site-header,
-.irl .site-footer {
-  border-color: var(--irl-brand-color);
-}
-.conf .branding-logo,
-.conf .icon {
-  fill: var(--conf-brand-color);
-}
-.camp .branding-logo,
-.camp .icon {
-  fill: var(--camp-brand-color);
-}
-.meetup .branding-logo,
-.meetup .icon {
-  fill: var(--meetup-brand-color);
-}
-.gaming .branding-logo,
-.gaming .icon {
-  fill: var(--gaming-brand-color);
-}
-.irl .branding-logo,
-.irl .icon {
-  fill: var(--irl-brand-color);
-}
-.conf .upcoming-event {
-  background-color: var(--conf-brand-color);
-}
-.camp .upcoming-event {
-  background-color: var(--camp-brand-color);
-}
-.meetup .upcoming-event {
-  background-color: var(--meetup-brand-color);
-}
-.gaming .upcoming-event {
-  background-color: var(--gaming-brand-color);
-}
-.irl .upcoming-event {
-  background-color: var(--irl-brand-color);
-}
-.conf .buy-tickets .featured-link, 
-.conf .get-tickets .featured-link,
-.conf .join-us .featured-link,
-.upcoming-event .featured-link.conf,
-.branded-events .featured-link.conf {
-  background-color: var(--conf-brand-color);
-}
-.camp .buy-tickets .featured-link, 
-.camp .get-tickets .featured-link,
-.camp .join-us .featured-link,
-.branded-events .featured-link.camp {
-  background-color: var(--camp-brand-color);
-}
-.meetup .buy-tickets .featured-link, 
-.meetup .get-tickets .featured-link,
-.meetup .join-us .featured-link,
-.branded-events .featured-link.meetup {
-  background-color: var(--meetup-brand-color);
-}
-.gaming .buy-tickets .featured-link, 
-.gaming .get-tickets .featured-link,
-.gaming .join-us .featured-link,
-.branded-events .featured-link.gaming {
-  background-color: var(--gaming-brand-color);
-}
-.irl .buy-tickets .featured-link, 
-.irl .get-tickets .featured-link,
-.irl .join-us .featured-link,
-.branded-events .featured-link.irl {
-  background-color: var(--irl-brand-color);
-}
-.upcoming-event .featured-link.conf,
-.upcoming-event .featured-link.camp,
-.upcoming-event .featured-link.meetup,
-.upcoming-event .featured-link.gaming,
-.upcoming-event .featured-link.irl,
-.branded-events .featured-link {
-  color: var(--inverse-text-color);
-}
-.conf .upcoming-event .featured-link {
-  color: var(--conf-brand-color);
-}
-.camp .upcoming-event .featured-link {
-  color: var(--camp-brand-color);
-}
-.meetup .upcoming-event .featured-link {
-  color: var(--meetup-brand-color);
-}
-.gaming .upcoming-event .featured-link {
-  color: var(--gaming-brand-color);
-}
-.irl .upcoming-event .featured-link {
-  color: var(--irl-brand-color);
-}
-.conf .speaker-image,
-.conf .organizer-image {
-  border-color: var(--conf-brand-color-50);
-}
-.camp .speaker-image,
-.camp .organizer-image {
-  border-color: var(--camp-brand-color-50);
-}
-.meetup .speaker-image,
-.meetup .organizer-image {
-  border-color: var(--meetup-brand-color-50);
-}
-.gaming .speaker-image,
-.gaming .organizer-image {
-  border-color: var(--gaming-brand-color-50);
-}
-.irl .speaker-image,
-.irl .organizer-image {
-  border-color: var(--irl-brand-color-50);
-}
-.conf h1, .conf h2, .conf h3, .conf h4, .conf h5, .conf h6 {
-  color: var(--conf-brand-color);
-}
-.camp h1, .camp h2, .camp h3, .camp h4, .camp h5, .camp h6 {
-  color: var(--camp-brand-color);
-}
-.meetup h1, .meetup h2, .meetup h3, .meetup h4, .meetup h5, .meetup h6 {
-  color: var(--meetup-brand-color);
-}
-.gaming h1, .gaming h2, .gaming h3, .gaming h4, .gaming h5, .gaming h6 {
-  color: var(--gaming-brand-color);
-}
-.irl h1, .irl h2, .irl h3, .irl h4, .irl h5, .irl h6 {
-  color: var(--irl-brand-color);
+.irl {
+  a,
+  .main-nav-menu [aria-current] {
+    text-decoration-color: var(--irl-brand-color-50)
+  }
+  .site-header,
+  .site-footer {
+    border-color: var(--irl-brand-color);
+  }
+  .branding-logo,
+  .icon {
+    fill: var(--irl-brand-color);
+  }
+  .upcoming-event {
+    background-color: var(--irl-brand-color);
+  }
+  .buy-tickets, 
+  .get-tickets,
+  .join-us {
+    .featured-link {
+        background-color: var(--irl-brand-color);
+    }
+  }
+  .upcoming-event {
+    .featured-link {
+      color: var(--irl-brand-color);
+    }
+  }
+  .speaker-image,
+  .organizer-image {
+    border-color: var(--irl-brand-color-50);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--irl-brand-color);
+  }
 }
 
 /* -------------------------------------------------------------------------
