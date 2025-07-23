@@ -268,10 +268,11 @@ h4 + .sub-head {
 }
 .team {
   list-style: none;
+  margin-top: 1.5rem;
   padding: 0;
 }
 .team li {
-  margin: 1.25em;
+  margin: 0 1.25rem;
 }
 .team p {
   margin: 0;
