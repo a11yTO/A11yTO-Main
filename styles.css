@@ -319,7 +319,6 @@ ul.schedule {
       grid-template-columns: 1fr auto;
       column-gap: 1.5rem;
       align-content: start;
-      min-height: 16rem;
     }
     .speaker-name {
       grid-column: 1/3;
