@@ -299,9 +299,6 @@ img.watching {
     }
   }
 }
-.talk {
-  margin-bottom: 1.5rem;
-}
 .talk-title,
 .speaker-name {
   margin-bottom: 0.75rem;
@@ -310,7 +307,7 @@ ul.schedule {
   margin: 1.5rem 0;
 }
 .speaker {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 @supports (display: grid) {
   @media (min-width: 35rem) {
@@ -329,6 +326,9 @@ ul.schedule {
     }
     .speaker-image {
       max-width: 10rem;
+    }
+    .speaker-bio p:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -489,6 +489,31 @@ a {
 .buy-tickets .featured-link {
   font-size: 1.125rem;
   padding: 0.5rem 1.5rem;
+}
+.playlist-list {
+  border-left: 0.1rem solid;
+  padding: 0 1rem;
+  list-style: none;
+}
+.playlist-list .session,
+.playlist-list p {
+  margin: 0;
+  position: relative;
+}
+.playlist-list li {
+  border: 0;
+  margin-bottom: 1.5rem;
+}
+.playlist-list .session:before,
+.playlist-list .break:before,
+.playlist-list .lunch:before {
+  content: "";
+  position: absolute;
+  left: -1.3rem;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
 }
 
 /* -------------------------------------------------------------------------
