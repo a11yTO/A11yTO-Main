@@ -227,6 +227,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  text-transform: capitalize;
 }
 .sub-head {
   margin-bottom: 0.25rem;
@@ -491,29 +492,15 @@ a {
   padding: 0.5rem 1.5rem;
 }
 .playlist-list {
-  border-left: 0.1rem solid;
-  padding: 0 1rem;
-  list-style: none;
+  margin: 1.5rem 0 3rem;
 }
-.playlist-list .session,
-.playlist-list p {
-  margin: 0;
-  position: relative;
+.playlist-list h3 {
+  font-size: var(--base-font-size);
+  font-family: var(--font-stack);
+  line-height: 1.2;
 }
-.playlist-list li {
-  border: 0;
-  margin-bottom: 1.5rem;
-}
-.playlist-list .session:before,
-.playlist-list .break:before,
-.playlist-list .lunch:before {
-  content: "";
-  position: absolute;
-  left: -1.3rem;
-  display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
+.playlist-list .speaker-name {
+  margin-bottom: 0;
 }
 
 /* -------------------------------------------------------------------------
