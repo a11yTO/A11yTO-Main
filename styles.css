@@ -418,7 +418,6 @@ body {
 }
 .event-title {
   font-size: 3.375rem;
-  text-transform: initial;
 }
 .event-description {
   font-size: 1.5rem;
@@ -866,4 +865,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+.no-caps {
+  text-transform: initial;
 }
