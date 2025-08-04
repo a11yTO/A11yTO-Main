@@ -522,124 +522,94 @@ a {
  * Colours
  * ------------------------------------------------------------------------- */
 body {
-  background: #fff; /* baseline hex colour */
-  background: var(--background-color);
-  color: #222222; /* baseline hex colour */
-  color: var(--text-color);
+  background: #fff;
+  color: #222222;
 }
 a {
-  color: #025b9f; /* baseline hex colour */
-  color: var(--link-color);
-  text-decoration-color: #7F7F7F; /* baseline hex colour */
-  text-decoration-color: var(--main-brand-color-50);
+  color: #025b9f;
+  text-decoration-color: #7F7F7F;
 }
 .skip-link {
-  background-color: #fff; /* baseline hex colour */
-  background-color: var(--background-color);
+  background-color: #fff;
 }
 .attention {
-  background-color: #000; /* baseline hex colour */
-  background-color: var(--main-brand-color);
-  color: #fff; /* baseline hex colour */
-  color: var(--inverse-text-color);
+  background-color: #000;
+  color: #fff;
 }
 .site-header .attention .inverse {
-  color: #fff; /* baseline hex colour */
-  color: var(--inverse-text-color);
-  text-decoration-color: #fff; /* baseline hex colour */
-  text-decoration-color: var(--inverse-text-color);
+  color: #fff;
+  text-decoration-color: #fff;
 }
 .site-header,
 .site-footer {
-  border-color: #000; /* baseline hex colour */
-  border-color: var(--main-brand-color);
+  border-color: #000;
   background-color: #fff;
-  background-color: var(--background-color);
 }
 .branding-logo,
 .icon {
-  fill: #000; /* baseline hex colour */
-  fill: var(--main-brand-color);
+  fill: #000;
 }
 .main-nav-menu a {
-  color: #222; /* baseline hex colour */
-  color: var(--text-color);
+  color: #222;
 }
 .main-nav-menu [aria-current] {
-  color: #025b9f; /* baseline hex colour */
-  color: var(--link-color);
-  text-decoration-color: #7F7F7F; /* baseline hex colour */
-  text-decoration-color: var(--main-brand-color-50);
+  color: #025b9f;
+  text-decoration-color: #7F7F7F;
 }
 .upcoming-event {
-  background-color: #000; /* baseline hex colour */
-  background-color: var(--main-brand-color);
+  background-color: #000;
 }
 .upcoming-event,
 .upcoming-event .event-title {
-  color: #fff; /* baseline hex colour */
-  color: var(--inverse-text-color);
+  color: #fff;
 }
 .join-us .featured-link,
 .get-tickets .featured-link,
 .buy-tickets .featured-link,
 .branded-events .featured-link {
-  color: #fff; /* baseline hex colour */
-  color: var(--light-accent);
-  background-color: #000; /* baseline hex colour */
-  background-color: var(--main-brand-color);
+  color: #fff;
+  background-color: #000;
 }
 .upcoming-event .featured-link {
-  color: #000; /* baseline hex colour */
-  color: var(--main-brand-color);
-  background-color: #fff; /* baseline hex colour */
-  background-color: var(--background-color);
+  color: #000;
+  background-color: #fff;
 }
 .upcoming-event .featured-link.conf,
 .upcoming-event .featured-link.camp,
 .upcoming-event .featured-link.meetup,
 .upcoming-event .featured-link.gaming,
 .upcoming-event .featured-link.irl {
-  color: #fff; /* baseline hex colour */
-  color: var(--inverse-text-color);
+  color: #fff;
 }
 .featured-link.conf,
 .branded-events .conf {
-  background-color: #025b9f; /* baseline hex colour */
-  background-color: var(--conf-brand-color);
+  background-color: #025b9f;
 }
 .featured-link.camp,
 .branded-events .camp {
-  background-color: #076800; /* baseline hex colour */
-  background-color: var(--camp-brand-color);
+  background-color: #076800;
 }
 .featured-link.meetup,
 .branded-events .meetup {
-  background-color: #b30a2e; /* baseline hex colour */
-  background-color: var(--meetup-brand-color);
+  background-color: #b30a2e;
 }
 .featured-link.gaming,
 .branded-events .gaming {
-  background-color: #d43d27; /* baseline hex colour */
-  background-color: var(--gaming-brand-color);
+  background-color: #d43d27;
 }
 .featured-link.irl,
 .branded-events .irl {
-  background-color: #6c2e7d; /* baseline hex colour */
-  background-color: var(--irl-brand-color);
+  background-color: #6c2e7d;
 }
 .speaker-image,
 .organizer-image {
-  border-color: #7F7F7F; /* baseline hex colour */
-  border-color: var(--main-brand-color-50);
+  border-color: #7F7F7F;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #000; /* baseline hex colour */
-  color: var(--main-brand-color);
+  color: #000;
 }
 .colophon [aria-current] {
-  color: #222; /* baseline hex colour */
-  color: var(--text-color);
+  color: #222;
 }
 .conf {
   a,
