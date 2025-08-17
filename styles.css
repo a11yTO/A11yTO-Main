@@ -616,184 +616,186 @@ h1, h2, h3, h4, h5, h6 {
 .colophon [aria-current] {
   color: #222;
 }
-.conf {
-  a,
-  .main-nav-menu [aria-current] {
-    text-decoration-color: var(--conf-brand-color-50, #80ADCF);
-  }
-  .site-header,
-  .site-footer {
-    border-color: var(--conf-brand-color, #025b9f);
-  }
-  .branding-logo,
-  .icon {
-    fill: var(--conf-brand-color, #025b9f);
-  }
-  .upcoming-event {
-    background-color: var(--conf-brand-color, #025b9f);
-  }
-  .buy-tickets, 
-  .get-tickets,
-  .join-us {
-    .featured-link {
-        background-color: var(--conf-brand-color, #025b9f);
+@media (prefers-contrast: no-preference) {
+  .conf {
+    a,
+    .main-nav-menu [aria-current] {
+      text-decoration-color: var(--conf-brand-color-50, #80ADCF);
     }
-  }
-  .upcoming-event {
-    .featured-link {
+    .site-header,
+    .site-footer {
+      border-color: var(--conf-brand-color, #025b9f);
+    }
+    .branding-logo,
+    .icon {
+      fill: var(--conf-brand-color, #025b9f);
+    }
+    .upcoming-event {
+      background-color: var(--conf-brand-color, #025b9f);
+    }
+    .buy-tickets, 
+    .get-tickets,
+    .join-us {
+      .featured-link {
+          background-color: var(--conf-brand-color, #025b9f);
+      }
+    }
+    .upcoming-event {
+      .featured-link {
+        color: var(--conf-brand-color, #025b9f);
+      }
+    }
+    .speaker-image,
+    .organizer-image {
+      border-color: var(--conf-brand-color-50, #80ADCF);
+    }
+    h1, h2, h3, h4, h5, h6 {
       color: var(--conf-brand-color, #025b9f);
     }
   }
-  .speaker-image,
-  .organizer-image {
-    border-color: var(--conf-brand-color-50, #80ADCF);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--conf-brand-color, #025b9f);
-  }
-}
-.camp {
-  a,
-  .main-nav-menu [aria-current] {
-    text-decoration-color: var(--camp-brand-color-50, #83B37F);
-  }
-  .site-header,
-  .site-footer {
-    border-color: var(--camp-brand-color, #076800);
-  }
-  .branding-logo,
-  .icon {
-    fill: var(--camp-brand-color, #076800);
-  }
-  .upcoming-event {
-    background-color: var(--camp-brand-color, #076800);
-  }
-  .buy-tickets, 
-  .get-tickets,
-  .join-us {
-    .featured-link {
-        background-color: var(--camp-brand-color, #076800);
+  .camp {
+    a,
+    .main-nav-menu [aria-current] {
+      text-decoration-color: var(--camp-brand-color-50, #83B37F);
     }
-  }
-  .upcoming-event {
-    .featured-link {
+    .site-header,
+    .site-footer {
+      border-color: var(--camp-brand-color, #076800);
+    }
+    .branding-logo,
+    .icon {
+      fill: var(--camp-brand-color, #076800);
+    }
+    .upcoming-event {
+      background-color: var(--camp-brand-color, #076800);
+    }
+    .buy-tickets, 
+    .get-tickets,
+    .join-us {
+      .featured-link {
+          background-color: var(--camp-brand-color, #076800);
+      }
+    }
+    .upcoming-event {
+      .featured-link {
+        color: var(--camp-brand-color, #076800);
+      }
+    }
+    .speaker-image,
+    .organizer-image {
+      border-color: var(--camp-brand-color-50, #83B37F);
+    }
+    h1, h2, h3, h4, h5, h6 {
       color: var(--camp-brand-color, #076800);
     }
   }
-  .speaker-image,
-  .organizer-image {
-    border-color: var(--camp-brand-color-50, #83B37F);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--camp-brand-color, #076800);
-  }
-}
-.meetup {
-  a,
-  .main-nav-menu [aria-current] {
-    text-decoration-color: var(--meetup-brand-color-50, #D98496);
-  }
-  .site-header,
-  .site-footer {
-    border-color: var(--meetup-brand-color, #b30a2e);
-  }
-  .branding-logo,
-  .icon {
-    fill: var(--meetup-brand-color, #b30a2e);
-  }
-  .upcoming-event {
-    background-color: var(--meetup-brand-color, #b30a2e);
-  }
-  .buy-tickets, 
-  .get-tickets,
-  .join-us {
-    .featured-link {
-        background-color: var(--meetup-brand-color, #b30a2e);
+  .meetup {
+    a,
+    .main-nav-menu [aria-current] {
+      text-decoration-color: var(--meetup-brand-color-50, #D98496);
     }
-  }
-  .upcoming-event {
-    .featured-link {
+    .site-header,
+    .site-footer {
+      border-color: var(--meetup-brand-color, #b30a2e);
+    }
+    .branding-logo,
+    .icon {
+      fill: var(--meetup-brand-color, #b30a2e);
+    }
+    .upcoming-event {
+      background-color: var(--meetup-brand-color, #b30a2e);
+    }
+    .buy-tickets, 
+    .get-tickets,
+    .join-us {
+      .featured-link {
+          background-color: var(--meetup-brand-color, #b30a2e);
+      }
+    }
+    .upcoming-event {
+      .featured-link {
+        color: var(--meetup-brand-color, #b30a2e);
+      }
+    }
+    .speaker-image,
+    .organizer-image {
+      border-color: var(--meetup-brand-color-50, #D98496);
+    }
+    h1, h2, h3, h4, h5, h6 {
       color: var(--meetup-brand-color, #b30a2e);
     }
   }
-  .speaker-image,
-  .organizer-image {
-    border-color: var(--meetup-brand-color-50, #D98496);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--meetup-brand-color, #b30a2e);
-  }
-}
-.gaming {
-  a,
-  .main-nav-menu [aria-current] {
-    text-decoration-color: var(--gaming-brand-color-50, #E99E93);
-  }
-  .site-header,
-  .site-footer {
-    border-color: var(--gaming-brand-color, #d43d27);
-  }
-  .branding-logo,
-  .icon {
-    fill: var(--gaming-brand-color, #d43d27);
-  }
-  .upcoming-event {
-    background-color: var(--gaming-brand-color, #d43d27);
-  }
-  .buy-tickets, 
-  .get-tickets,
-  .join-us {
-    .featured-link {
-        background-color: var(--gaming-brand-color, #d43d27);
+  .gaming {
+    a,
+    .main-nav-menu [aria-current] {
+      text-decoration-color: var(--gaming-brand-color-50, #E99E93);
     }
-  }
-  .upcoming-event {
-    .featured-link {
+    .site-header,
+    .site-footer {
+      border-color: var(--gaming-brand-color, #d43d27);
+    }
+    .branding-logo,
+    .icon {
+      fill: var(--gaming-brand-color, #d43d27);
+    }
+    .upcoming-event {
+      background-color: var(--gaming-brand-color, #d43d27);
+    }
+    .buy-tickets, 
+    .get-tickets,
+    .join-us {
+      .featured-link {
+          background-color: var(--gaming-brand-color, #d43d27);
+      }
+    }
+    .upcoming-event {
+      .featured-link {
+        color: var(--gaming-brand-color, #d43d27);
+      }
+    }
+    .speaker-image,
+    .organizer-image {
+      border-color: var(--gaming-brand-color-50, #E99E93);
+    }
+    h1, h2, h3, h4, h5, h6 {
       color: var(--gaming-brand-color, #d43d27);
     }
   }
-  .speaker-image,
-  .organizer-image {
-    border-color: var(--gaming-brand-color-50, #E99E93);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--gaming-brand-color, #d43d27);
-  }
-}
-.irl {
-  a,
-  .main-nav-menu [aria-current] {
-    text-decoration-color: var(--irl-brand-color-50, #B596BE);
-  }
-  .site-header,
-  .site-footer {
-    border-color: var(--irl-brand-color, #6c2e7d);
-  }
-  .branding-logo,
-  .icon {
-    fill: var(--irl-brand-color, #6c2e7d);
-  }
-  .upcoming-event {
-    background-color: var(--irl-brand-color, #6c2e7d);
-  }
-  .buy-tickets, 
-  .get-tickets,
-  .join-us {
-    .featured-link {
-        background-color: var(--irl-brand-color, #6c2e7d);
+  .irl {
+    a,
+    .main-nav-menu [aria-current] {
+      text-decoration-color: var(--irl-brand-color-50, #B596BE);
     }
-  }
-  .upcoming-event {
-    .featured-link {
+    .site-header,
+    .site-footer {
+      border-color: var(--irl-brand-color, #6c2e7d);
+    }
+    .branding-logo,
+    .icon {
+      fill: var(--irl-brand-color, #6c2e7d);
+    }
+    .upcoming-event {
+      background-color: var(--irl-brand-color, #6c2e7d);
+    }
+    .buy-tickets, 
+    .get-tickets,
+    .join-us {
+      .featured-link {
+          background-color: var(--irl-brand-color, #6c2e7d);
+      }
+    }
+    .upcoming-event {
+      .featured-link {
+        color: var(--irl-brand-color, #6c2e7d);
+      }
+    }
+    .speaker-image,
+    .organizer-image {
+      border-color: var(--irl-brand-color-50, #B596BE);
+    }
+    h1, h2, h3, h4, h5, h6 {
       color: var(--irl-brand-color, #6c2e7d);
     }
-  }
-  .speaker-image,
-  .organizer-image {
-    border-color: var(--irl-brand-color-50, #B596BE);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--irl-brand-color, #6c2e7d);
   }
 }
 
