@@ -524,8 +524,9 @@ a {
 }
 
 /* -------------------------------------------------------------------------
- * Colours
+ * Themes
  * ------------------------------------------------------------------------- */
+/* Base - High Contrast Theme  */
 body {
   background: #fff;
   color: #222222;
@@ -585,6 +586,7 @@ h1, h2, h3, h4, h5, h6 {
 .colophon [aria-current] {
   color: #222;
 }
+/* If an 'increase contrast' setting is set on a users OS the following colours will not display */
 @media (prefers-contrast: no-preference) {
   .upcoming-event .featured-link.conf,
   .upcoming-event .featured-link.camp,
@@ -617,6 +619,7 @@ h1, h2, h3, h4, h5, h6 {
   .organizer-image {
     border-color: #7F7F7F;
   }
+  /* Conf Theme */
   .conf {
     a,
     .main-nav-menu [aria-current] {
@@ -653,6 +656,7 @@ h1, h2, h3, h4, h5, h6 {
       color: var(--conf-brand-color, #025b9f);
     }
   }
+  /* Camp Theme */
   .camp {
     a,
     .main-nav-menu [aria-current] {
@@ -689,6 +693,7 @@ h1, h2, h3, h4, h5, h6 {
       color: var(--camp-brand-color, #076800);
     }
   }
+  /* Camp Theme */
   .meetup {
     a,
     .main-nav-menu [aria-current] {
@@ -725,6 +730,7 @@ h1, h2, h3, h4, h5, h6 {
       color: var(--meetup-brand-color, #b30a2e);
     }
   }
+  /* Gaming Theme */
   .gaming {
     a,
     .main-nav-menu [aria-current] {
@@ -761,6 +767,7 @@ h1, h2, h3, h4, h5, h6 {
       color: var(--gaming-brand-color, #d43d27);
     }
   }
+  /* IRL Theme */
   .irl {
     a,
     .main-nav-menu [aria-current] {
@@ -831,9 +838,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* -------------------------------------------------------------------------
- * Utility class to hide content visually while keeping it screen reader-accessible.
- * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ * Utility classes
  * ------------------------------------------------------------------------- */
+ /* A utility class to hide content visually while keeping it screen reader-accessible.
+  * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
