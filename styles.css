@@ -539,6 +539,10 @@ a {
   background-color: #000;
   color: #fff;
 }
+.attention a {
+  color: #fff;
+  text-decoration-color: #fff;  
+}
 .site-header .attention .inverse {
   color: #fff;
   text-decoration-color: #fff;
