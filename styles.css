@@ -32,11 +32,6 @@
 /* -------------------------------------------------------------------------
  * Reset
  * ------------------------------------------------------------------------- */
-/* Don’t Inherit the Box Model,
-   see: https://www.oddbird.net/2025/09/04/box-model/ */
-* {
-  box-sizing: border-box;
-}
 :where(html) {
   scrollbar-gutter: stable;
 }
@@ -220,6 +215,7 @@ strong {
   margin: 1.5rem 0;
 }
 main {
+  box-sizing: border-box;
   padding: 0 5%;
   margin: 1.5rem auto;
   max-width: 44rem;
