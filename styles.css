@@ -829,7 +829,8 @@ h1, h2, h3, h4, h5, h6 {
   outline-color: var(--light-accent);
   outline-offset: 0.2rem;
 }
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   left: 0.75rem;
   outline-offset: 0;
 }
