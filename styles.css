@@ -850,3 +850,27 @@ h1, h2, h3, h4, h5, h6 {
 .no-caps {
   text-transform: initial;
 }
+.mw-90 {
+  max-width: 5.625rem;
+  height: auto;
+}
+.mw-100 {
+  max-width: 6.25rem;
+  height: auto;
+}
+.mw-160 {
+  max-width: 10rem;
+  height: auto;
+}
+.mw-190 {
+  max-width: 11.875rem;
+  height: auto;
+}
+.mw-200 {
+  max-width: 12.5rem;
+  height: auto;
+}
+.mw-250 {
+  max-width: 15.625rem;
+  height: auto;
+}
