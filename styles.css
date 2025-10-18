@@ -533,7 +533,8 @@ a {
   background-color: #000;
   color: #fff;
 }
-.attention a {
+.attention a,
+.past-event .attention a {
   color: #fff;
   text-decoration-color: #fff;  
 }
@@ -811,6 +812,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   z-index: 1000;
 }
+.attention a:focus,
 .inverse:focus {
   outline-color: #fff;
   outline-color: var(--light-accent);
@@ -822,6 +824,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: 0.175rem solid #222;
   outline-color: var(--dark-accent);
 }
+.attention a:focus-visible,
 .inverse:focus-visible {
   outline-color: #fff;
   outline-color: var(--light-accent);
