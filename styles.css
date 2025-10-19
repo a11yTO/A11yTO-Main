@@ -337,7 +337,6 @@ ul.schedule {
 }
 .logo {
   margin: 1.5rem 0;
-  width: auto;
 }
 @supports (display: flex) {
   @media (min-width: 35rem) {
@@ -859,26 +858,26 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: initial;
 }
 .mw-90 {
-  max-width: 5.625rem;
+  max-width: 5.625em;
   height: auto;
 }
 .mw-100 {
-  max-width: 6.25rem;
+  max-width: 6.25em;
   height: auto;
 }
 .mw-160 {
-  max-width: 10rem;
+  max-width: 10em;
   height: auto;
 }
 .mw-190 {
-  max-width: 11.875rem;
+  max-width: 11.875em;
   height: auto;
 }
 .mw-200 {
-  max-width: 12.5rem;
+  max-width: 12.5em;
   height: auto;
 }
 .mw-250 {
-  max-width: 15.625rem;
+  max-width: 15.625em;
   height: auto;
 }
