@@ -337,6 +337,7 @@ ul.schedule {
 }
 .logo {
   margin: 1.5rem 0;
+  height: auto;
 }
 @supports (display: flex) {
   @media (min-width: 35rem) {
@@ -857,27 +858,55 @@ h1, h2, h3, h4, h5, h6 {
 .no-caps {
   text-transform: initial;
 }
+/* Utility max-width classes for sponsor images */
 .mw-90 {
   max-width: 5.625em;
-  height: auto;
 }
 .mw-100 {
   max-width: 6.25em;
-  height: auto;
+}
+.mw-110 {
+  max-width: 6.875em;
+}
+.mw-120 {
+  max-width: 7.5em;
+}
+.mw-130 {
+  max-width: 8.125em;
+}
+.mw-140 {
+  max-width: 8.75em;
+}
+.mw-150 {
+  max-width: 9.375em;
 }
 .mw-160 {
   max-width: 10em;
-  height: auto;
+}
+.mw-170 {
+  max-width: 10.625em;
+}
+.mw-180 {
+  max-width: 11.25em;
 }
 .mw-190 {
   max-width: 11.875em;
-  height: auto;
 }
 .mw-200 {
   max-width: 12.5em;
-  height: auto;
+}
+.mw-210 {
+  max-width: 13.125em;
+}
+.mw-220 {
+  max-width: 13.75em;
+}
+.mw-230 {
+  max-width: 14.375em;
+}
+.mw-240 {
+  max-width: 15em;
 }
 .mw-250 {
   max-width: 15.625em;
-  height: auto;
 }
