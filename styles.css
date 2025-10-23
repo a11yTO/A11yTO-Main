@@ -142,6 +142,7 @@ body {
 @supports (flex-wrap: wrap) {
   .social-icons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     padding-block-start: 0.3rem;
