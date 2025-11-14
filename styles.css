@@ -104,7 +104,7 @@ body {
 }
 .branding-logo {
   display: block;
-  height: 4rem;
+  max-height: 4rem;
   margin: 0 auto;
   width: auto;
 }
