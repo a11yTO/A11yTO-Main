@@ -408,6 +408,7 @@ body {
 }
 .upcoming-event {
   font-weight: bold;
+  overflow: visible;
 }
 .event-title {
   font-size: 3.375rem;
