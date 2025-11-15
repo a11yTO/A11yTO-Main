@@ -169,6 +169,9 @@ body {
       max-inline-size: 75rem;
       padding: 0.75rem 5%;
     }
+    .branding-logo {
+      height: 4rem;
+    }
     .main-nav-menu li {
       margin: 0;
     }
