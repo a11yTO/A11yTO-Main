@@ -89,6 +89,7 @@ body {
 }
 .site-header {
   border-bottom: 0.2rem solid;
+  margin-bottom: 1.5rem;
 }
 .masthead {
   padding: 1.5rem 5% 0.5rem;
@@ -221,7 +222,7 @@ body {
 main {
   box-sizing: border-box;
   padding: 0 5%;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   max-width: 48rem;
 }
 h1,
@@ -269,7 +270,6 @@ h4 + .sub-head {
 }
 .team {
   list-style: none;
-  margin-top: 1.5rem;
   padding: 0;
 }
 .team li {
