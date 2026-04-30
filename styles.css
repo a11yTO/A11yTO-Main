@@ -504,15 +504,18 @@ a {
   font-size: 1.125rem;
   padding: 0.5rem 1.5rem;
 }
-.playlist-list {
+.playlist-list,
+.schedule-list {
   margin: 1.5rem 0 3rem;
 }
-.playlist-list h3 {
+.playlist-list h3,
+.schedule-list h2 {
   font-size: var(--base-font-size, 112.5%);
   font-family: var(--font-stack, "Open Sans", sans-serif);
   line-height: 1.2;
 }
-.playlist-list .speaker-name {
+.playlist-list .speaker-name,
+.schedule-list .speaker-name {
   margin-bottom: 0;
 }
 
