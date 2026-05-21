@@ -892,6 +892,15 @@ h6 {
   text-transform: initial;
 }
 /* Utility max-width classes for sponsor images */
+.mw-60 {
+  max-width: 3.75em;
+}
+.mw-70 {
+  max-width: 4.375em;
+}
+.mw-80 {
+  max-width: 5em;
+}
 .mw-90 {
   max-width: 5.625em;
 }
