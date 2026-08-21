@@ -151,7 +151,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  @media (min-width: 50rem) {
+  @media (min-width: 52.5rem) {
     .nav-list {
       display: flex;
       align-items: center;
