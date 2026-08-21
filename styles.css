@@ -160,7 +160,7 @@ body {
       padding: 0.5rem 0;
     }
   }
-  @media (min-width: 70rem) {
+  @media (min-width: 75rem) {
     .masthead {
       display: flex;
       align-items: center;
